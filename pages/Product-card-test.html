@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test_product-card</title>
     <link rel="stylesheet" href="../src/style/tailwindcss.css">
+    <script src="../component/product-card.js"></script>
 </head>
 <body>
 
@@ -12,94 +13,42 @@
     <div class="flex justify-center">
         <div id="container" class="grid grid-cols-2 w-auto h-auto">
     
-            <div class="  flex flex-col">
-                <div class="">
-                    <img src="../assets/index/bottle1.webp" alt="">
-                </div>
-                <div class=" w-full flex grow-[1] flex-col  items-center text-center  justify-between text-soft-gray1">
-                    <div class="flex justify-start items-center flex-col pt-[10px] w-full uppercase ">
-                        <h3 class="pt-[8px]  w-full text-wrap font-normalidadExteded text-stroke-1">STRAWBERRY BANANA</h3>
-                        <P class="pt-[5px] w-full">12PK<span> / </span>$29.99</P>
-                    </div>
-                    <div class="flex justify-end pb-[14px] mt-[7px] cursor-pointer">
-                        <div class=" border border-solid border-black bg-black hover:bg-white hover:text-black text-white font-bold pt-[2px] pb-[1px] px-[14px] rounded">ADD TO CART</div>
-                    </div>
-                </div>
-            </div>
+        <product-card
+            product-img-url="../assets/index/bottle1.webp"
+            product-title="Strawberry Banana"
+            product-size="12pk"
+            product-price="$29.99"
+        ></product-card>
+        
+        <product-card
+            product-img-url="../assets/index/bottle1.webp"
+            product-title="Cherry freeze"
+            product-size="12pk"
+            product-price="$29.99"
+        ></product-card>
 
-            <div class="  flex flex-col">
-                <div class=" ">
-                    <img src="../assets/index/bottle1.webp" alt="">
-                </div>
-                <div class=" w-full flex grow-[1] flex-col  items-center text-center  justify-between text-soft-gray1">
-                    <div class="flex justify-start items-center flex-col pt-[10px] w-full uppercase ">
-                        <h3 class="pt-[8px]  w-full text-wrap font-normalidadExteded text-stroke-1">CHERRY </h3>
-                        <P class="pt-[5px] w-full">12PK<span> / </span>$29.99</P>
-                    </div>
-                    <div class="flex justify-end pb-[14px] mt-[7px] cursor-pointer">
-                        <div class=" border border-solid border-black bg-black hover:bg-white hover:text-black text-white font-bold pt-[2px] pb-[1px] px-[14px] rounded">ADD TO CART</div>
-                    </div>
-                </div>
-            </div>
+        <product-card
+            product-img-url="../assets/index/bottle1.webp"
+            product-title="len"
+            product-size="12pk"
+            product-price="$29.99"
+        ></product-card>
 
-            <div class="  flex flex-col">
-                <div class=" ">
-                    <img src="../assets/index/bottle1.webp" alt="">
-                </div>
-                <div class=" w-full flex grow-[1] flex-col  items-center text-center  justify-between text-soft-gray1">
-                    <div class="flex justify-start items-center flex-col pt-[10px] w-full uppercase ">
-                        <h3 class="pt-[8px]  w-full text-wrap font-normalidadExteded text-stroke-1">CHERRY FREEZE</h3>
-                        <P class="pt-[5px] w-full">12PK<span> / </span>$29.99</P>
-                    </div>
-                    <div class="flex justify-end pb-[14px] mt-[7px] cursor-pointer">
-                        <div class=" border border-solid border-black bg-black hover:bg-white hover:text-black text-white font-bold pt-[2px] pb-[1px] px-[14px] rounded">ADD TO CART</div>
-                    </div>
-                </div>
-            </div>
+        <product-card
+            product-img-url="../assets/index/bottle1.webp"
+            product-title="Strawberry Banana"
+            product-size="12pk"
+            product-price="$29.99"
+        ></product-card>
 
-            <div class="  flex flex-col">
-                <div class=" ">
-                    <img src="../assets/index/bottle1.webp" alt="">
-                </div>
-                <div class=" w-full flex grow-[1] flex-col  items-center text-center  justify-between text-soft-gray1">
-                    <div class="flex justify-start items-center flex-col pt-[10px] w-full uppercase ">
-                        <h3 class="pt-[8px]  w-full text-wrap font-normalidadExteded text-stroke-1">CHERRY FREEZE</h3>
-                        <P class="pt-[5px] w-full">12PK<span> / </span>$29.99</P>
-                    </div>
-                    <div class="flex justify-end pb-[14px] mt-[7px] cursor-pointer">
-                        <div class=" border border-solid border-black bg-black hover:bg-white hover:text-black text-white font-bold pt-[2px] pb-[1px] px-[14px] rounded">ADD TO CART</div>
-                    </div>
-                </div>
-            </div>
+      
 
-            <div class="  flex flex-col">
-                <div class=" ">
-                    <img src="../assets/index/bottle1.webp" alt="">
-                </div>
-                <div class=" w-full flex grow-[1] flex-col  items-center text-center  justify-between text-soft-gray1">
-                    <div class="flex justify-start items-center flex-col pt-[10px] w-full uppercase ">
-                        <h3 class="pt-[8px]  w-full text-wrap font-normalidadExteded text-stroke-1">CHERRY FREEZE</h3>
-                        <P class="pt-[5px] w-full">12PK<span> / </span>$29.99</P>
-                    </div>
-                    <div class="flex justify-end pb-[14px] mt-[7px] cursor-pointer">
-                        <div class=" border border-solid border-black bg-black hover:bg-white hover:text-black text-white font-bold pt-[2px] pb-[1px] px-[14px] rounded">ADD TO CART</div>
-                    </div>
-                </div>
-            </div>
-            <div class="  flex flex-col">
-                <div class=" ">
-                    <img src="../assets/index/bottle1.webp" alt="">
-                </div>
-                <div class=" w-full flex grow-[1] flex-col  items-center text-center  justify-between text-soft-gray1">
-                    <div class="flex justify-start items-center flex-col pt-[10px] w-full uppercase ">
-                        <h3 class="pt-[8px]  w-full text-wrap font-normalidadExteded text-stroke-1">CHERRY FREEZE</h3>
-                        <P class="pt-[5px] w-full">12PK<span> / </span>$29.99</P>
-                    </div>
-                    <div class="flex justify-end pb-[14px] mt-[7px] cursor-pointer">
-                        <div class=" border border-solid border-black bg-black hover:bg-white hover:text-black text-white font-bold pt-[2px] pb-[1px] px-[14px] rounded">ADD TO CART</div>
-                    </div>
-                </div>
-            </div>
+    
+
+   
+     
+      
+
         </div>
     </div>
 </body>
