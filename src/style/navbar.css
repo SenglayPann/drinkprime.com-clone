@@ -1,0 +1,11 @@
+.right-icon, #us {
+    transition: all .5s ease-in-out;
+}
+
+#navbar-container:hover .right-icon {
+    fill: black;
+}
+
+#navbar-container:hover #us {
+    border-color: black;
+}
