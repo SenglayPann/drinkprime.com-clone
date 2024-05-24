@@ -1,6 +1,10 @@
-.right-icon, #us {
-    transition: all .5s ease-in-out;
+.right-icon #us {
+    transition: all .45s ease-in-out;
 }
+#side-bar {
+    transition: left .3s ease-in-out;
+}
+
 
 #navbar-container:hover .right-icon {
     fill: black;
@@ -9,3 +13,45 @@
 #navbar-container:hover #us {
     border-color: black;
 }
+.hidden-ls {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.animate-border {
+    opacity: 0;
+}
+
+.sec-nav-ls:hover .animate-border {
+    width: 100%;
+    opacity: 1;
+}
+.sec-nav-ls:hover .hidden-ls {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.animate-border {
+    transition: width .2s ease-in-out ;
+}
+
+
+.opacity-0 {
+    opacity: 0;
+    transition: none;
+}
+
+.opacity-1 {
+    opacity: 1;
+    transition: opacity .45s ease-in-out;
+}
+
+.side-bar-ul>a>li {
+    padding: 7px 0;
+}
+
+.acc-arrow {
+    rotate: -180deg;
+    transition: transform .2s ease-in;
+}
+
