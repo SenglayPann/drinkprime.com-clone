@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./pages/**/*.{html,js}"],
+  content: ["./index.html", "./component/**/*.js", "./pages/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -45,6 +45,7 @@ module.exports = {
         'des': '1400px',
       },
       textStroke: {
+        0.2: '0.2px',
         1: '1px',
         2: '2px',
         3: '3px',
