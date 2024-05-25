@@ -1,6 +1,7 @@
 .right-icon #us {
     transition: all .45s ease-in-out;
 }
+
 #side-bar {
     transition: left .42s ease-out;
 }
@@ -60,24 +61,40 @@
     transition: transform .2s ease-in;
 }
 
-#search-bar {
+
+#search-bar, #search-bar-overlay {
     transition: all .3s ease;
 }
 
-#search-bar>input::placeholder {
+#inner-search-bar>input::placeholder {
     font-size: 13px;
     letter-spacing: .15rem;
     color: black;
     border: none;
 }
-#search-bar>input {
+#inner-search-bar>input {
     letter-spacing: .15rem;
     padding-left: 50px;
     color: black;
     text-transform: uppercase;
 }
 
-#search-bar>input:focus {
+#inner-search-bar>input:focus {
     outline: none;
     
+}
+
+
+/* important classes */
+
+.bg-must-white {
+    background-color: white !important;
+}
+
+.icon-must-black {
+    fill: black !important;
+}
+
+.text-must-black {
+    color: black !important;
 }

@@ -612,6 +612,10 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .bottom-\[-2px\] {
   bottom: -2px;
 }
@@ -656,6 +660,10 @@ video {
   z-index: 0;
 }
 
+.-z-20 {
+  z-index: -20;
+}
+
 .order-1 {
   order: 1;
 }
@@ -696,6 +704,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.box-border {
+  box-sizing: border-box;
+}
+
 .flex {
   display: flex;
 }
@@ -734,6 +746,26 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[74\] {
+  height: 74;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-\[200\] {
+  height: 200;
+}
+
+.h-\[200vh\] {
+  height: 200vh;
 }
 
 .w-0 {
@@ -919,6 +951,72 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[r\] {
+  background-color: r;
+}
+
+.bg-\[rgba\] {
+  background-color: rgba;
+}
+
+.bg-\[rgba\(\)\] {
+  background-color: rgba();
+}
+
+.bg-\[rgba\(0\)\] {
+  background-color: rgba(0);
+}
+
+.bg-\[rgba\(0\2c \)\] {
+  background-color: rgba(0,);
+}
+
+.bg-\[rgba\(0\2c _0\2c _0\2c _\.2\)\] {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.bg-\[rgba\(0\2c _0\2c _0\2c _\.5\)\] {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.bg-\[rgba\(0\2c _0\2c _0\2c _1\)\] {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.bg-\[rgba\(0\2c _0\2c _0\2c _\)\] {
+  background-color: rgba(0, 0, 0, );
+}
+
+.bg-\[rgba\(0\2c _0\2c _0\2c _\.1\)\] {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.bg-\[rgba\(0\2c _0\2c _0\2c _\.15\)\] {
+  background-color: rgba(0, 0, 0, .15);
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-pure-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-green-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
+.bg-none {
+  background-image: none;
 }
 
 .fill-black {
@@ -1112,6 +1210,10 @@ video {
   opacity: 0;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -1284,6 +1386,35 @@ body {
 
   .tab\:border-none {
     border-style: none;
+  }
+
+  .tab\:bg-\[\] {
+    background-color: ;
+  }
+
+  .tab\:bg-\[none\] {
+    background-color: none;
+  }
+
+  .tab\:bg-\[tran\] {
+    background-color: tran;
+  }
+
+  .tab\:bg-\[tranparent\] {
+    background-color: tranparent;
+  }
+
+  .tab\:bg-black {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  }
+
+  .tab\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .tab\:bg-none {
+    background-image: none;
   }
 
   .tab\:px-\[7px\] {
