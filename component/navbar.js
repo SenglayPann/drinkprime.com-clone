@@ -491,7 +491,6 @@ class Navbar extends HTMLElement {
 
         // take search bar overlay as navbar closing button
         window.addEventListener('click', (e) => {
-            console.log(e.target)
             if (e.target.closest('#search-bar-overlay') && !e.target.closest('#search-bar')) {
                 searchBarOverlay.classList.add('-z-10');
                 searchBarOverlay.classList.remove('z-20');
