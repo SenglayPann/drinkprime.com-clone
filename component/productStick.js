@@ -38,11 +38,11 @@ class productCard extends HTMLElement {
                     </div>
         
                     <div class="w-[354px] flex gap-[25px] justify-center">
-                        <img class="w-12 h-12" src="../assets/index/PR-icon-1-Coconut_76.webp" alt="coconut water">
-                        <img class="w-12 h-12" src="../assets/index/PR-icon-2-Caffeine_73.webp" alt="caffeine free">
-                        <img class="w-12 h-12"  src="../assets/index/PR-icon-3-Electrolytes_61.webp" alt="834mg electorlytes">
-                        <img class="w-12 h-12"  src="../assets/index/PR-icon-4-BVitamins_21.webp" alt="b vitamins">
-                        <img class="w-12 h-12"  src="../assets/index/PR-icon-5-Antioxidants_6.webp" alt="antioxidants">
+                        <img class="w-12 h-12" src="../assets/index/product-sticks/PR-icon-1-Coconut_76.webp" alt="coconut water">
+                        <img class="w-12 h-12" src="../assets/index/product-sticks/PR-icon-2-Caffeine_73.webp" alt="caffeine free">
+                        <img class="w-12 h-12"  src="../assets/index/product-sticks/PR-icon-3-Electrolytes_61.webp" alt="834mg electorlytes">
+                        <img class="w-12 h-12"  src="../assets/index/product-sticks/PR-icon-4-BVitamins_21.webp" alt="b vitamins">
+                        <img class="w-12 h-12"  src="../assets/index/product-sticks/PR-icon-5-Antioxidants_6.webp" alt="antioxidants">
                     </div>
             
                     <hr class="w-[354px] tab:w-[400px]">
