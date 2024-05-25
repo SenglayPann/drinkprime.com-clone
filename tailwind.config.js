@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./component/**/*.js", "./pages/**/*.{html,js}"],
+  content: ["./index.html", "./pages/**/*.{html,js}", "./component/**/*.js"],
   theme: {
     extend: {
       colors: {
@@ -51,7 +51,13 @@ module.exports = {
         3: '3px',
         4: '4px',
         5: '5px',
-        6: '6px'
+        6: '6px',
+        'none': '0px',
+        'sm': '.3px',
+        'md': '.5px',
+        'lg': '.8px',
+        'semibold' : '1.2px'
+
       },
       textStrokeColor: {
         'pure-white': '#fff',
