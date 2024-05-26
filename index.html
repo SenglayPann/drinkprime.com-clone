@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIME</title>
+    <link rel="stylesheet" href="./src/style/tailwindcss.css">
+    <link rel="stylesheet" href="./src/style/navbar.css">
+    <script src="./component/productCard.js" defer></script>
+    <script src="./component/navbar.js" defer></script>
+    <script src="./component/footer.js" defer></script>
+</head>
+<body>
+    <!-- NAV BAR : PRIME NAV-BAR -->
+    <nav-bar></nav-bar>
+    
+    <!-- HERO SECTION : HERO BANNER SECTION -->
+    <section class="flex relative">
+        <div>
+            <img src="/assets/homepage/hero-banner.webp" alt="hero-banner logan paul and KSI prime" class="object-cover hidden tab:flex">
+            <img src="/assets/homepage/hero-banner-smaller.webp" alt="hero-banner logan paul and KSI prime" class="object-cover flex tab:hidden">
+        </div>
+        <div class="absolute w-full bottom-0 p-8">
+            <h3 class="font-normalidadCompact text-white text-[28px] tab:text-[35px] text-stroke-0">
+                STRAWBERRY BANANA   
+            </h3>
+            <button class="font-normalidadWide bg-white border-solid border-white border-[1px] max-h-[52px] h-[52px] px-[19px] w-[150px] tab:w-[200px] text-transparent">
+                SHOP NOW
+            </button>
+        </div>
+    </section>
+
+    <!-- DRINK SECTION : PRIME DRINKS  -->
+    <section>
+       <div class="mx-7 mt-[35px] des:mt-[45px] mb-5 tracking-[.12em]">
+            <div>
+                <h2 class="text-heading font-normalidadExteded tracking-[0.2em] text-stroke-4 tab:text-stroke-6 text-center">
+                    HYDRATION
+                </h2>
+            </div>
+            <div class="grid grid-cols-2 tab2:grid-cols-3 tab3:grid-cols-6 mx-auto tab3:mt-[-65px] des:mt-[-85px] tab3:max-w-[1320px]">
+                <div class="mx-3 mb-6">
+                    <product-card
+                        product-img-url="assets/homepage/strawberry-banana.webp"
+                        product-title="STRAWBERRY BANANA"
+                        product-size="12PK"
+                        product-price="$29.99">
+                    </product-card>
+                </div>
+
+                <div class="mx-3 mb-6">
+                    <product-card
+                        product-img-url="assets/homepage/cherry-freeze.webp"
+                        product-title="CHERRY FREEZE "
+                        product-size="12PK"
+                        product-price="$29.99"
+                        button-bg-color="white"
+                        button-title="FIND IN STORE">
+                    </product-card>
+                </div>
+
+                <div class="mx-3 mb-6">
+                    <product-card
+                        product-img-url="assets/homepage/lemonade.webp"
+                        product-title="LEMONADE"
+                        product-size="12PK"
+                        product-price="$29.99">
+                    </product-card>
+                </div>
+
+                <div class="mx-3 mb-6">
+                    <product-card
+                        product-img-url="assets/homepage/strawberry-watermelon.webp"
+                        product-title="STRAWBERRY WATERMELON"
+                        product-size="12PK"
+                        product-price="$29.99">
+                    </product-card>
+                </div>
+
+                <div class="mx-3 mb-6">
+                    <product-card
+                        product-img-url="assets/homepage/meta-moon.webp"
+                        product-title="META MOON"
+                        product-size="12PK"
+                        product-price="$29.99">
+                    </product-card>
+                </div>
+
+                <div class="mx-3 mb-6">
+                    <product-card
+                        product-img-url="assets/homepage/ice-pop.webp"
+                        product-title="ICE POP"
+                        product-size="12PK"
+                        product-price="$29.99">
+                    </product-card>
+                </div>
+            </div>
+       </div>
+       <div class="flex pt-[45px] pb-5 max-w-[1125px] mx-auto flex-col tab:flex-row">
+            <div class="px-6 mb-6">
+                <img src="/assets/homepage/Hydration-group.webp" alt="">
+            </div>
+            <div class="flex flex-col px-6 mb-6">
+                <img src="/assets/homepage/PR-logo-01.webp" alt="">
+                <div class="mx-auto my-6">
+                    <button class="font-normalidadExteded text-[14px] hover:text-black hover:bg-transparent text-stroke-1 px-6 border-solid border-black border-[1px] tracking-[0.2em] text-white bg-black min-w-[180px] max-w-[199px] h-[52px] text-center">
+                        SHOP HYDRATION
+                    </button>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <!-- STICK SECTION : PRIME ENERGY STICKS SECTION  -->
+    <section>
+       <div class="mx-7 mt-[35px] des:mt-[45px] mb-5 tracking-[.12em]">
+            <div>
+                <h2 class="text-heading font-normalidadExteded tracking-[0.2em] text-stroke-4 tab:text-stroke-6 text-center">
+                    HYDRATION+
+                </h2>
+            </div>
+            <div class="grid grid-cols-2 tab2:grid-cols-3 tab3:grid-cols-6 mx-auto tab3:mt-[-65px] des:mt-[-85px] tab3:max-w-[1320px]">
+                <div class="mx-3 mb-6">
+                    <product-card
+                        product-img-url="assets/homepage/strawberry-banana-stick.webp"
+                        product-title="STRAWBERRY BANANA"
+                        product-size="6PK"
+                        product-price="$13.99"
+                        button-bg-color="white"
+                        button-title="FIND IN STORE">
+                    </product-card>
+                </div>
+
+                <div class="mx-3 mb-6">
+                    <product-card
+                        product-img-url="assets/homepage/cherry-freeze-stick.webp"
+                        product-title="CHERRY FREEEZE"
+                        product-size="6PK"
+                        product-price="$13.99">
+                    </product-card>
+                </div>
+
+                <div class="mx-3 mb-6">
+                    <product-card
+                        product-img-url="assets/homepage/lemonade-stick.webp"
+                        product-title="LEMONADE"
+                        product-size="6PK"
+                        product-price="$13.99">
+                    </product-card>
+                </div>
+
+                <div class="mx-3 mb-6">
+                    <product-card
+                        product-img-url="assets/homepage/watermelon-strawberry-stick.webp"
+                        product-title="STRAWBERRY WATERMELON"
+                        product-size="6PK"
+                        product-price="$13.99">
+                    </product-card>
+                </div>
+
+                <div class="mx-3 mb-6">
+                    <product-card
+                        product-img-url="assets/homepage/icepop-stick.webp"
+                        product-title="ICE POP"
+                        product-size="6PK"
+                        product-price="$13.99">
+                    </product-card>
+                </div>
+
+                <div class="mx-3 mb-6">
+                    <product-card
+                        product-img-url="assets/homepage/meta-moon-stick.webp"
+                        product-title="META MOON"
+                        product-size="6PK"
+                        product-price="$13.99"
+                        button-bg-color="white"
+                        button-title="FIND IN STORE">
+                    </product-card>
+                </div>
+            </div>
+       </div>
+       <div class="flex pt-[45px] pb-5 max-w-[1125px] mx-auto flex-col tab:flex-row">
+            <div class="px-6 mb-6">
+                <img src="/assets/homepage/sb-stick-group.webp" alt="">
+            </div>
+            <div class="flex flex-col px-6 mb-6">
+                <img src="/assets/homepage/PR-logo-01.webp" alt="">
+                <div class="mx-auto my-6">
+                    <button class="font-normalidadExteded text-[14px] text-stroke-1 px-6 border-solid border-black border-[1px] text-white bg-black hover:text-black hover:bg-transparent min-w-[180px] max-w-[199px] h-[52px] text-center tracking-[0.2em]">
+                        SHOP HYDRATION+
+                    </button>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <!-- CAN SECTION : CANNED DRINK SECTION  -->
+    <section">
+       <div class="mx-7 mt-[35px] des:mt-[45px] mb-5 tracking-[.12em]">
+            <div>
+                <h2 class="text-heading font-normalidadExteded tracking-[0.2em] text-stroke-4 tab:text-stroke-6 text-center">
+                    ENERGY
+                </h2>
+            </div>
+            <div class="flex flex-wrap mx-auto tab3:mt-[-65px] des:mt-[-85px] tab3:max-w-[1320px] tab3:flex-nowrap justify-center">
+                <div class="mx-3 mb-6 w-[calc(50%_-_24px)] tab2:w-[calc(33.33%_-_24px)]">
+                    <product-card
+                        product-img-url="assets/homepage/meta-moon-can.webp"
+                        product-title="ORIGINAL"
+                        product-size="12PK"
+                        product-price="$29.99"
+                        button-bg-color="white"
+                        button-title="FIND IN STORE">
+                    </product-card>
+                </div>
+
+                <div class="mx-3 mb-6 w-[calc(50%_-_24px)] tab2:w-[calc(33.33%_-_24px)]">
+                    <product-card
+                        product-img-url="assets/homepage/ice-pop-can.webp"
+                        product-title="ICE POP"
+                        product-size="12PK"
+                        product-price="$29.99"
+                        button-bg-color="white"
+                        button-title="FIND IN STORE">
+                    </product-card>
+                </div>
+
+                <div class="mx-3 mb-6 w-[calc(50%_-_24px)] tab2:w-[calc(33.33%_-_24px)]">
+                    <product-card
+                        product-img-url="assets/homepage/strawberry-watermelon-can.webp"
+                        product-title="STRAWBERRY WATERMELON"
+                        product-size="12PK"
+                        product-price="$29.99"
+                        button-bg-color="white"
+                        button-title="FIND IN STORE">
+                    </product-card>
+                </div>
+
+                <div class="mx-3 mb-6 w-[calc(50%_-_24px)] tab2:w-[calc(33.33%_-_24px)]">
+                    <product-card
+                        product-img-url="assets/homepage/blueraspberry-can.webp"
+                        product-title="BLUE RASPBERRY"
+                        product-size="12PK"
+                        product-price="$29.99"
+                        button-bg-color="white"
+                        button-title="FIND IN STORE">
+                    </product-card>
+                </div>
+
+                <div class="mx-3 mb-6 w-[calc(50%_-_24px)] tab2:w-[calc(33.33%_-_24px)]">
+                    <product-card
+                        product-img-url="assets/homepage/tropical-punch-can.webp"
+                        product-title="TROPICAL PUNCH"
+                        product-size="12PK"
+                        product-price="$29.99"
+                        button-bg-color="white"
+                        button-title="FIND IN STORE">
+                    </product-card>
+                </div>
+            </div>
+       </div>
+       <div class="flex pt-[45px] pb-5 max-w-[1125px] mx-auto flex-col tab:flex-row">
+            <div class="px-6 mb-6">
+                <img src="assets/homepage/group-can.webp" alt="">
+            </div>
+            <div class="flex flex-col px-6 mb-6">
+                <img src="assets/homepage/PR-logo02.webp" alt="">
+                <div class="mx-auto my-6">
+                    <button class="font-normalidadExteded text-[14px] text-stroke-1 px-6 border-solid border-black border-[1px] text-white bg-black hover:text-black hover:bg-transparent min-w-[180px] max-w-[199px] h-[52px] text-center tracking-[0.2em]">
+                        SHOP ENERGY
+                    </button>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <!-- FOOTER SECTION : PRIME FOOTER -->
+    <prime-footer></prime-footer>
+
+
+</body>
+</html>

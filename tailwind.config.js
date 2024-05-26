@@ -42,15 +42,17 @@ module.exports = {
       },
       screens: {
         'mb' : '390px',
-        'tab': '798px',
         'mmb': '960px',
-        't-tab': '1400px',
+        'tab': '798px',
         'ttab' : '1448px',
         'des': '1400px',
+        't-tab': '1400px',
         'tab1': '960px',
+        'tab2' : '815px',
+        'tab3' : '1024px',
       },
       textStroke: {
-        0.2: '0.2px',
+        0.2: '0.5px',
         1: '1px',
         2: '2px',
         3: '3px',
@@ -71,6 +73,9 @@ module.exports = {
         'soft-gray2': '#828282',
         'soft-red': '#d24545',
       },
+      fontSize: { 
+        'heading' : 'clamp(10px, 9vw, 9rem)'
+      }
     },
   },
   variants: {
