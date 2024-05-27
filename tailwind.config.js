@@ -42,6 +42,7 @@ module.exports = {
       },
       screens: {
         'tab': '798px',
+        't-tab' : '1400px',
         'ttab' : '1448px',
         'des': '1400px',
       },

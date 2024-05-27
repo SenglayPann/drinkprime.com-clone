@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> usa-subpage </title>
     <link rel="stylesheet" href="../src/style/tailwindcss.css">
-    <script src="../component/usa-subpage.js"></script>
+    <link rel="stylesheet" href="../src/style/navbar.css">
+    <script src="../component/usa-subpage.js"defer></script>
+    <script src="../component/footer.js"defer></script>
+    <script src="../component/navbar.js"defer></script>
 </head>
 <body>
 
     <!-- navbar -->
-
+    <nav-bar bgMustWhite="true" textMustBlack="true" iconMustBlack="true" ></nav-bar>
     <!-- body-content -->
-    <div class="pt-[40px] mx-[100px] px-[21px] flex justify-center">
+    <div class="pt-[40px] mx-[40px] mt-[52px] px-[21px] flex justify-center tab:mt-[119px] t-tab:mt-[76.03px]">
         <div class="pt-[10x] pb-[21px]">
             <h2 class="flex justify-center font-normalidadCompact font-bold text-[28px] leading-[37px] uppercase tracking-[0.2em]  text-center">VERIFY YOUR PRIME</h2>
-            <div class="max-w-[680px] flex justify-center flex-col ">
-                <p class="w-full mt-[50px] font-normalidadCompact-Regular text-[14px]">
+            <div class="flex justify-center flex-col ">
+                <p class="mt-[50px] font-normalidadCompact-Regular text-[14px]">
                     Official PRIME products are only sold exclusively on our websites, <a class="underline" href="#">drinkprime.com,</a> drinkprime.uk and through our trusted retail partners. Visit our <a class="underline" href="#">store locator</a> to find PRIME near you.
                 </p>
-                <p class="w-full mt-[14px] font-normalidadCompact-Regular text-[14px]">
+                <p class=" mt-[14px] font-normalidadCompact-Regular text-[14px]">
                     Verify your product by checking the size, label and formula we’ve launched in your country below.
                 </p>
             </div>
@@ -155,6 +158,9 @@
             imgSrc="../assets/verify-your-prime-subpage-product/24.webp">
         </product-card>
     </div>
+    <!-- footer -->
+    <prime-footer></prime-footer>
+    <prime-footer></prime-footer>
 </body>
 </html>
 
