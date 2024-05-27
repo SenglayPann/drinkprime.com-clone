@@ -676,6 +676,10 @@ video {
   top: 80%;
 }
 
+.top-\[120px\] {
+  top: 120px;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -2169,6 +2173,10 @@ body {
 
   .tab\:top-\[70\%\] {
     top: 70%;
+  }
+
+  .tab\:top-\[120px\] {
+    top: 120px;
   }
 
   .tab\:order-2 {
