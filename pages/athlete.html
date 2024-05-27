@@ -9,6 +9,7 @@
     <script src="/component/navbar.js"defer></script>
     <script src="/component/component-athletes-logo.js" defer></script>
     <script src="/component/component-creator-cards.js"defer></script>
+    <script src="../component/footer.js" defer></script>
 </head>
 <body>
     
@@ -42,8 +43,9 @@
         <div class="container mx-auto p-6 grid grid-cols-2 md:grid-cols-5 justify-items-center items-center" id="logoGridContainer"></div>
     </section>
 
-
+    <!-- TEAM SECTION : TEAM + ATHLETES  -->
     <section>
+        <!-- BIG GRID : BIGGER GRIDDED SECTION -->
         <div class="tab1:grid tab1:grid-cols-2">
             <div class="relative">
                 <img src="../assets/athlete+team/patrick-mahomes.webp" alt="creator image" class="object-cover w-full h-[450px]">
@@ -62,6 +64,7 @@
                 </div>
             </div>
         </div>
+        <!-- SMALL GRID : SMALLER GRIDDED SECTION -->
         <div>
             <div class="grid grid-cols-1 tab1:grid-cols-3" id="creatorGrid" logoList='[
                 { 
@@ -127,26 +130,29 @@
                 ]'>
             </div>
         </div>
+        <!-- BIG GRID : BIGGER GRIDDED SECTION -->
         <div class="tab1:grid tab1:grid-cols-2">
             <div class="relative">
-                <img src="../assets/athlete+team/patrick-mahomes.webp" alt="creator image" class="object-cover w-full h-[450px]">
+                <img src="../assets/athlete+team/tyreek-hill.webp" alt="creator image" class="object-cover w-full h-[450px]">
                 <div class="text-left tab1:text-black p-[15px] mb-[20px] tab1:absolute tab1:bottom-0 tab1:left-0 tab1:w-full text-stroke-1">
-                   <h3 class="font-normalidadExteded tab1:text-white tab1:drop-shadow-[2px_2px_4px_black] font-extrabold text-lg mb-[5px] tracking-[0.2em]">PATRICK MAHOMES</h3>
+                   <h3 class="font-normalidadExteded tab1:text-white tab1:drop-shadow-[2px_2px_4px_black] font-extrabold text-lg mb-[5px] tracking-[0.2em]">TYREEK HILL</h3>
                    <h3 class="font-normalidadExteded tab1:text-white tab1:drop-shadow-[2px_2px_4px_black] text-base  tracking-[1.47px]">FOOTBALL</h3>
                    <p class="font-normalidadExteded mt-[12px] mb-[10px] text-sm tab1:text-xs underline tab1:no-underline underline-offset-3 tab1:border-[1px] tab1:border-black tab1:bg-white tab1:mt-[16px] tab1:px-[12px] tab1:py-[10px] w-[140px] tracking-[1.5px]">LEARN MORE</p>
                 </div>
             </div>
             <div class="relative">
-                <img src="../assets/athlete+team/erling-haaland.webp" alt="creator image" class="object-cover w-full h-[450px]">
+                <img src="../assets/athlete+team/max-park.webp" alt="creator image" class="object-cover w-full h-[450px]">
                 <div class="text-left tab1:text-black p-[15px] mb-[20px] tab1:absolute tab1:bottom-0 tab1:left-0 tab1:w-full text-stroke-1">
-                   <h3 class="font-normalidadExteded tab1:text-white tab1:drop-shadow-[2px_2px_4px_black] font-extrabold text-lg mb-[5px] tracking-[0.2em]">ERLING HAALAND</h3>
-                   <h3 class="font-normalidadExteded tab1:text-white tab1:drop-shadow-[2px_2px_4px_black] text-base  tracking-[1.47px]">SOCCER</h3>
+                   <h3 class="font-normalidadExteded tab1:text-white tab1:drop-shadow-[2px_2px_4px_black] font-extrabold text-lg mb-[5px] tracking-[0.2em]">MAX PARK</h3>
+                   <h3 class="font-normalidadExteded tab1:text-white tab1:drop-shadow-[2px_2px_4px_black] text-base  tracking-[1.47px]">RUBIK'S CUBE</h3>
                    <p class="font-normalidadExteded mt-[12px] mb-[10px] text-sm tab1:text-xs underline tab1:no-underline underline-offset-3 tab1:border-[1px] tab1:border-black tab1:bg-white tab1:mt-[16px] tab1:px-[12px] tab1:py-[10px] w-[140px] tracking-[1.5px]">LEARN MORE</p>
                 </div>
             </div>
         </div>
     </section>
     
+    <!-- FOOTER SECTION : PRIME FOOTER -->
+    <prime-footer></prime-footer>
 
 </body>
 </html>
