@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy</title>
+    <link rel="stylesheet" href="../src/style/tailwindcss.css">
+    <link rel="stylesheet" href="../src/style/navbar.css">
+    <script src="../component/navbar.js" defer></script>
+    <script src="../component/productCard.js"></script>
+    <script src="../src/script/energy.js" defer></script>
+    <script src="../component/footer.js"></script>
+</head>
+<body class="mt-[50px] tab:mt-[119px] des:mt-[75px]">
+
+    <!-- navbar  -->
+    <nav-bar bgMustWhite="true" textMustBlack="true" iconMustBlack="true"></nav-bar>
+
+    <!-- image-desktop  -->
+    <img class="w-full hidden tab:block" src="../assets/index/energy/engergy-can-desktop.webp" alt="">
+
+    <!-- image-mobile  -->
+    <img class="w-full tab:hidden" src="../assets/index/energy/energy-can-mobile.webp" alt="">
+
+    <!-- icon  -->
+    <div class="flex gap-[10px] w-full justify-center pt-[40px] tab:gap-[100px]">
+        <img class="w-[100px] h-[105px] tab:w-[110px] tab:h-[110px]" src="../assets/index/energy/energy-icon-1.webp" alt="">
+        <img class="w-[100px] h-[105px] tab:w-[110px] tab:h-[110px]" src="../assets/index/energy/energy-icon-2.webp" alt="">
+        <img class="w-[100px] h-[105px] tab:w-[110px] tab:h-[110px]" src="../assets/index/energy/energy-icon-3.webp" alt="">
+        <img class="w-[100px] h-[105px] tab:w-[110px] tab:h-[110px]" src="../assets/index/energy/energy-icon-4.webp" alt="">
+    </div>
+
+    <!-- energy-drink-product-display-tablet and desktop  -->
+    <section class="flex justify-center w-full mt-[50px]">
+        <div id="card-tab-container" class="grid grid-cols-2 tab:grid-cols-3 w-[980px]">
+                <product-card product-img-url="../assets/index/energy/ORIGINAL.webp" product-title="ORIGINAL" product-size="12PK" product-price="$29.99" button-bg-color="bg-white" button-title="FIND IN STORE"></product-card>
+                <product-card product-img-url="../assets/index/energy/ICE POP.webp" product-title="ICE POP" product-size="12PK" product-price="$29.99" button-bg-color="bg-white" button-title="FIND IN STORE"></product-card>
+                <product-card product-img-url="../assets/index/energy/STRAWBERRY WATERMELON.webp" product-title="STRAWBERRY WATERMELON" product-size="12PK" product-price="$29.99" button-bg-color="bg-white" button-title="FIND IN STORE"></product-card>
+
+                <product-card product-img-url="../assets/index/energy/BLUE RASPBERRY.webp" product-title="BLUE RASPBERRY" product-size="12PK" product-price="$29.99" button-bg-color="bg-white" button-title="FIND IN STORE"></product-card>
+                <product-card product-img-url="../assets/index/energy/TROPICAL PUNCH .webp" product-title="TROPICAL PUNCH" product-size="12PK" product-price="$29.99" button-bg-color="bg-white" button-title="FIND IN STORE"></product-card>
+                <product-card product-img-url="../assets/index/energy/ORANGE MANGO.webp" product-title="ORANGE MANGO" product-size="12PK" product-price="$29.99" button-bg-color="bg-white" button-title="FIND IN STORE"></product-card>
+        </div>
+        
+    </section>
+    <div class="w-full flex justify-center">
+        <div class=" flex w-[980px] justify-center">
+            <div id="last-card" class="grid grid-cols-1" >
+                <product-card product-img-url="../assets/index/energY/LEMON LIME.webp" product-title="LEMON LIME" product-size="12PK" product-price="$29.99" button-bg-color="bg-white" button-title="FIND IN STORE"></product-card>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <!-- footer  -->
+    <div class="mt-[80px]">
+        <prime-footer></prime-footer>
+    </div>
+
+</body>
+</html>
