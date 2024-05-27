@@ -1885,6 +1885,10 @@ video {
   letter-spacing: 4px;
 }
 
+.tracking-\[5px\] {
+  letter-spacing: 5px;
+}
+
 .tracking-wide {
   letter-spacing: 0.025em;
 }
@@ -2157,6 +2161,10 @@ body {
 
   .tab\:top-\[140px\] {
     top: 140px;
+  }
+
+  .tab\:top-\[65\%\] {
+    top: 65%;
   }
 
   .tab\:top-\[70\%\] {
