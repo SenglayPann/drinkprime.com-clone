@@ -754,6 +754,98 @@ video {
   top: 510px;
 }
 
+.bottom-\[20px\] {
+  bottom: 20px;
+}
+
+.top-\[\] {
+  top: ;
+}
+
+.top-\[-10\%\] {
+  top: -10%;
+}
+
+.top-\[10\%\] {
+  top: 10%;
+}
+
+.top-\[12\%\] {
+  top: 12%;
+}
+
+.top-\[8\%\] {
+  top: 8%;
+}
+
+.top-\[20\%\] {
+  top: 20%;
+}
+
+.top-\[15\%\] {
+  top: 15%;
+}
+
+.top-\[13\%\] {
+  top: 13%;
+}
+
+.top-\[5\%\] {
+  top: 5%;
+}
+
+.top-\[-5\%\] {
+  top: -5%;
+}
+
+.top-\[100px\] {
+  top: 100px;
+}
+
+.top-\[-100px\] {
+  top: -100px;
+}
+
+.top-\[200px\] {
+  top: 200px;
+}
+
+.top-\[300px\] {
+  top: 300px;
+}
+
+.top-\[50\%\] {
+  top: 50%;
+}
+
+.top-\[80px\] {
+  top: 80px;
+}
+
+.top-\[70px\] {
+  top: 70px;
+}
+
+.top-\[400px\] {
+  top: 400px;
+}
+
+.top-\[600px\] {
+  top: 600px;
+}
+
+.top-\[500px\] {
+  top: 500px;
+}
+
+.top-\[530px\] {
+  top: 530px;
+}
+
+.top-\[510px\] {
+  top: 510px;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -881,6 +973,54 @@ video {
 
 .mt-\[7px\] {
   margin-top: 7px;
+}
+
+.mt-\[20px\] {
+  margin-top: 20px;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.mt-\[60px\] {
+  margin-top: 60px;
+}
+
+.mt-\[70px\] {
+  margin-top: 70px;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
+.mt-\[115px\] {
+  margin-top: 115px;
+}
+
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[100\] {
+  margin-top: 100;
+}
+
+.mt-\[1000px\] {
+  margin-top: 1000px;
+}
+
+.mt-\[200px\] {
+  margin-top: 200px;
+}
+
+.mt-\[5\] {
+  margin-top: 5;
+}
+
+.mt-\[150px\] {
+  margin-top: 150px;
 }
 
 .mt-\[8px\] {
@@ -2156,6 +2296,10 @@ video {
   -webkit-text-stroke-width: 2px;
 }
 
+.text-stroke-3 {
+  -webkit-text-stroke-width: 3px;
+}
+
 .text-stroke-5 {
   -webkit-text-stroke-width: 5px;
 }
@@ -2335,6 +2479,22 @@ body {
     margin-left: 0px;
   }
 
+  .tab\:mt-\[120px\] {
+    margin-top: 120px;
+  }
+
+  .tab\:mt-\[150px\] {
+    margin-top: 150px;
+  }
+
+  .tab\:mt-\[180px\] {
+    margin-top: 180px;
+  }
+
+  .tab\:mt-\[160px\] {
+    margin-top: 160px;
+  }
+
   .tab\:mt-\[68\.03px\] {
     margin-top: 68.03px;
   }
@@ -2433,6 +2593,14 @@ body {
 
   .tab\:grow-0 {
     flex-grow: 0;
+  }
+
+  .tab\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .tab\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .tab\:grid-cols-4 {

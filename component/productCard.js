@@ -11,7 +11,7 @@ class productCard extends HTMLElement {
         const buttonBgColor = this.getAttribute('button-bg-color') || 'bg-black'; 
         const buttonTitle = this.getAttribute('button-title') || 'ADD TO CART';
 
-        this.setAttribute('class', 'flex flex-col');
+        this.setAttribute('class', 'flex flex-col w-full h-full');
         
         // Determine text color based on background color
         let buttonTextColor, hoverBgColor, hoverTextColor;
