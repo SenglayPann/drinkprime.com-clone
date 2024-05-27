@@ -45,6 +45,7 @@ module.exports = {
         't-tab' : '1400px',
         'ttab' : '1448px',
         'des': '1400px',
+        'tab1': '960px',
       },
       textStroke: {
         0.2: '0.2px',
