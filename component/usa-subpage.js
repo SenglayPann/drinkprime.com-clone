@@ -8,9 +8,9 @@ class ProductCard extends HTMLElement {
         const imgSrc = this.getAttribute('imgSrc');
 
         this.innerHTML = `
-            <div class="text-center p-8 box-border">
+            <div class="text-center p-8 box-border ">
                 <img src="${imgSrc}" alt="${productName}" class="w-full h-auto">
-                <p class="text-center mt-[8px] mb-[48px] mx-[46px]">${productName}</p>
+                <p class="text-center font-extrabold text-sm tracking-[1.87px] mt-[8px] mb-[48px] mx-[46px] text-stroke-1">${productName}</p>
             </div>
         `;
     }
