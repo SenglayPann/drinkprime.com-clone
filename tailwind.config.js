@@ -41,6 +41,7 @@ module.exports = {
         'nunito': ['Nunito', 'sans-serif']
       },
       screens: {
+        'mb' : '390px',
         'tab': '798px',
         't-tab': '1400px',
         'ttab' : '1448px',

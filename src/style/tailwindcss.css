@@ -558,6 +558,12 @@ video {
   width: 100%;
 }
 
+@media (min-width: 390px) {
+  .container {
+    max-width: 390px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -721,6 +727,11 @@ video {
   margin-right: auto;
 }
 
+.my-\[40px\] {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -849,6 +860,10 @@ video {
   margin-top: 8px;
 }
 
+.mr-\[10px\] {
+  margin-right: 10px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -889,12 +904,20 @@ video {
   height: 2.25rem;
 }
 
+.h-\[1080px\] {
+  height: 1080px;
+}
+
 .h-\[200vh\] {
   height: 200vh;
 }
 
 .h-\[205px\] {
   height: 205px;
+}
+
+.h-\[24px\] {
+  height: 24px;
 }
 
 .h-\[2px\] {
@@ -959,6 +982,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[25px\] {
+  height: 25px;
 }
 
 .min-h-screen {
@@ -1057,6 +1084,10 @@ video {
   width: 60px;
 }
 
+.w-\[68vw\] {
+  width: 68vw;
+}
+
 .w-\[700px\] {
   width: 700px;
 }
@@ -1075,6 +1106,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[25px\] {
+  width: 25px;
 }
 
 .max-w-3xl {
@@ -1161,6 +1196,10 @@ video {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-9 {
+  grid-template-rows: repeat(9, minmax(0, 1fr));
 }
 
 .grid-rows-none {
@@ -1404,6 +1443,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'https\:\/\/drinkprime\.com\/cdn\/shop\/files\/BlankMap-World_gray_1\.png\?v\=1710272070\'\)\] {
+  background-image: url('https://drinkprime.com/cdn/shop/files/BlankMap-World_gray_1.png?v=1710272070');
+}
+
 .fill-black {
   fill: #000;
 }
@@ -1550,6 +1593,11 @@ video {
   padding-bottom: 8px;
 }
 
+.px-\[30px\] {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1678,6 +1726,10 @@ video {
   padding-top: 8px;
 }
 
+.pb-\[30px\] {
+  padding-bottom: 30px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1799,6 +1851,10 @@ video {
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-normal {
@@ -1927,6 +1983,10 @@ video {
 
 .opacity-0 {
   opacity: 0;
+}
+
+.opacity-75 {
+  opacity: 0.75;
 }
 
 .shadow-lg {
@@ -2133,6 +2193,12 @@ body {
 
   .max-\[480px\]\:text-\[9px\] {
     font-size: 9px;
+  }
+}
+
+@media (min-width: 390px) {
+  .mb\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -2358,6 +2424,10 @@ body {
     text-align: start;
   }
 
+  .tab\:text-\[20px\] {
+    font-size: 20px;
+  }
+
   .tab\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -2556,6 +2626,15 @@ body {
   .ttab\:mx-\[271px\] {
     margin-left: 271px;
     margin-right: 271px;
+  }
+
+  .ttab\:px-\[40px\] {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .ttab\:pb-\[40px\] {
+    padding-bottom: 40px;
   }
 
   .ttab\:text-center {
