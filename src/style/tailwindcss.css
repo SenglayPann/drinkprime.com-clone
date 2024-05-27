@@ -757,6 +757,10 @@ video {
   margin-bottom: 22.400px;
 }
 
+.mb-\[24px\] {
+  margin-bottom: 24px;
+}
+
 .mb-\[27px\] {
   margin-bottom: 27px;
 }
@@ -801,6 +805,10 @@ video {
   margin-top: 100px;
 }
 
+.mt-\[10px\] {
+  margin-top: 10px;
+}
+
 .mt-\[115px\] {
   margin-top: 115px;
 }
@@ -815,6 +823,14 @@ video {
 
 .mt-\[20px\] {
   margin-top: 20px;
+}
+
+.mt-\[31px\] {
+  margin-top: 31px;
+}
+
+.mt-\[40px\] {
+  margin-top: 40px;
 }
 
 .mt-\[50px\] {
@@ -1069,6 +1085,10 @@ video {
   max-width: 1450px;
 }
 
+.max-w-\[400px\] {
+  max-width: 400px;
+}
+
 .max-w-\[960px\] {
   max-width: 960px;
 }
@@ -1261,6 +1281,10 @@ video {
 
 .text-nowrap {
   text-wrap: nowrap;
+}
+
+.rounded-\[1px\] {
+  border-radius: 1px;
 }
 
 .rounded-full {
@@ -1466,9 +1490,19 @@ video {
   padding-right: 23px;
 }
 
+.px-\[27px\] {
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
 .px-\[29px\] {
   padding-left: 29px;
   padding-right: 29px;
+}
+
+.px-\[8px\] {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .py-12 {
@@ -1486,6 +1520,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-\[13px\] {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
 .py-\[14px\] {
   padding-top: 14px;
   padding-bottom: 14px;
@@ -1494,6 +1533,11 @@ video {
 .py-\[20px\] {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.py-\[4px\] {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .py-\[5px\] {
@@ -1604,6 +1648,10 @@ video {
 
 .pt-\[10x\] {
   padding-top: 10x;
+}
+
+.pt-\[12px\] {
+  padding-top: 12px;
 }
 
 .pt-\[20px\] {
@@ -1833,6 +1881,10 @@ video {
   letter-spacing: 4.33px;
 }
 
+.tracking-\[4px\] {
+  letter-spacing: 4px;
+}
+
 .tracking-wide {
   letter-spacing: 0.025em;
 }
@@ -2022,6 +2074,16 @@ video {
 
 body {
   font-family: 'Normalidad';
+}
+
+.placeholder\:text-black::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-black::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:border-black\/100:hover {
@@ -2252,6 +2314,10 @@ body {
     padding-bottom: 12px;
   }
 
+  .tab\:pb-\[40px\] {
+    padding-bottom: 40px;
+  }
+
   .tab\:pb-\[8px\] {
     padding-bottom: 8px;
   }
@@ -2270,6 +2336,10 @@ body {
 
   .tab\:pt-\[22px\] {
     padding-top: 22px;
+  }
+
+  .tab\:pt-\[80px\] {
+    padding-top: 80px;
   }
 
   .tab\:text-left {

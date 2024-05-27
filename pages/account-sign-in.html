@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <link rel="stylesheet" href="../src/style/tailwindcss.css">
+    <link rel="stylesheet" href="../src/style/navbar.css">
+    <script src="../component/navbar.js"></script>
+    <script src="../component/footer.js"></script>
+</head>
+<body>
+
+    <!--navbar-->
+    <nav-bar bgMustWhite="true" textMustBlack="true" iconMustBlack="true" ></nav-bar>
+    
+    <!-- body content -->
+    <div class="flex justify-center  mt-[40px] mb-[20px]   ">
+        <div class=" w-screen flex flex-col px-[23px]">
+            
+            <!-- content details -->
+            <div id="login" class="flex flex-col items-center  mt-[50px]  tab:[115.53px] tab:pt-[80px] tab:pb-[40px] t-tab:[76.03px]">
+                <h1 class="font-normalidadExteded text-[20px] text-stroke-2 tracking-[4px] mb-[20px]">LOGIN</h1>
+                <p class="font-normalidadCompact-Regular text-sm mb-[24px]"> Please enter your e-mail and password: </p>
+            </div>
+
+            <div class="flex justify-center ">
+                <div class="w-full max-w-[400px] flex flex-col items-center ">
+                    <input class="py-[4px] px-[8px] w-full border rounded-[1px] border-black mb-[10px] placeholder:text-black" type="email"  placeholder="Email address">
+                    <input class="py-[4px] px-[8px] w-full border text-black rounded-[1px] border-black mb-[10px] placeholder:text-black" type="password" placeholder="Password">
+                    <button class=" font-normalidadExteded tracking-[2px] py-[13px] px-[27px] mt-[10px] mb-[5px] w-full bg-black border rounded-[1px] text-[14px] border-black text-white hover:bg-white hover:text-black  ">LOGIN</button>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <p class="mt-[31px] font-normalidadCompac-Regular text-sm"> Forgot your password? </p>
+                <p class="pt-[12px] font-normalidadCompact-Regular text-sm"> New Customer? Sign up </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <prime-footer></prime-footer>
+</body>
+</html>
