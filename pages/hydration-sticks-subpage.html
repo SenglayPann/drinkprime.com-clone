@@ -9,6 +9,7 @@
     <script src="../component/productCard.js"></script>
     <link rel="stylesheet" href="../src/style/tailwindcss.css">
     <link rel="stylesheet" href="../src/style/navbar.css">
+    <script defer src="../src/script/test.js"></script>
 </head>
 <body>
 
@@ -18,11 +19,36 @@
     <!-- Product-sticks -->
     <section class="mt-[100px] tab:mt-[150px] w-full flex justify-center des:mt-[120px]">
         <div class="container flex flex-col items-center w-[1200px] tab:flex-row tab:items-start">
-            <div class="w-[354px] scroll-image flex overflow-x-scroll tab:flex tab:flex-col tab:w-[576px] tab:overflow-x-hidden">
+            
+            <div class="w-[354px] scroll-image hidden tab:flex tab:flex-col tab:w-[576px]">
                 <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-sticks/SBSticksFront_2000x.webp" alt="front">
                 <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-sticks/SBSticksSide_600x.webp" alt="side">
                 <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-sticks/SBSticksBack_600x.webp" alt="back">
             </div>
+
+    <!-- product-stick-diplay-mobile  -->
+            <section class="bg-gray-100 flex items-center justify-center min-h-screen tab:hidden">
+                <div class="relative w-full max-w-3xl overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
+                    <div class="carousel-item flex-none w-full">
+                        <img src="../assets/index/product-sticks/SBSticksFront_2000x.webp" alt="Image 1" class="w-full">
+                    </div>
+                    <div class="carousel-item flex-none w-full">
+                        <img src="../assets/index/product-sticks/SBSticksSide_600x.webp" alt="Image 2" class="w-full">
+                    </div>
+                    <div class="carousel-item flex-none w-full">
+                        <img src="../assets/index/product-sticks/SBSticksBack_600x.webp" alt="Image 3" class="w-full">
+                    </div>
+                    </div>
+                    <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2" onclick="prevSlide()">
+                    &lt;
+                    </button>
+                    <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2" onclick="nextSlide()">
+                    &gt;
+                    </button>
+                </div>
+            </section>
+
 
             <div class="w-[354px] h-1788 flex flex-col items-center gap-5 pt-5 tab:w-[400px] sticky top-0">
                 <div class="w-full flex flex-col gap-2 items-center tab:items-start">
