@@ -1,0 +1,6 @@
+.btn-bg {
+    transition: transform 0.4s;
+}
+.btn-bg {
+    transform: translateX(0);
+}

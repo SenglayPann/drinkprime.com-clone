@@ -6,9 +6,11 @@
     <title>PRIME</title>
     <link rel="stylesheet" href="./src/style/tailwindcss.css">
     <link rel="stylesheet" href="./src/style/navbar.css">
+    <link rel="stylesheet" href="./src/style/index.css">
     <script src="./component/productCard.js" defer></script>
     <script src="./component/navbar.js" defer></script>
     <script src="./component/footer.js" defer></script>
+    <script src="./src/script/index.js" defer></script>
 </head>
 <body>
     <!-- NAV BAR : PRIME NAV-BAR -->
@@ -21,12 +23,17 @@
             <img src="/assets/homepage/hero-banner-smaller.webp" alt="hero-banner logan paul and KSI prime" class="object-cover flex tab:hidden">
         </div>
         <div class="absolute w-full bottom-0 p-8">
-            <h3 class="font-normalidadCompact text-white text-[28px] tab:text-[35px] text-stroke-0">
-                STRAWBERRY BANANA   
-            </h3>
-            <button class="font-normalidadWide bg-white border-solid border-white border-[1px] max-h-[52px] h-[52px] px-[19px] w-[150px] tab:w-[200px] text-transparent">
-                SHOP NOW
-            </button>
+            <div class="mt-7 pb-3">
+                <h3 class="font-roboto text-white text-[28px] tab:text-[35px] tracking-wider text-stroke-2 tab:text-stroke-3">
+                    STRAWBERRY BANANA   
+                </h3>
+            </div>
+            <div id="btn-container" class="btn-container w-[150px] h-[52px] tab:w-[200px] tab:h-[52px] relative inline-block overflow-hidden ">
+                <div id="btn-bg" class="btn-bg absolute top-0 left-0 w-full h-full bg-white z-10 "></div>
+                <button class="btn-content text-black z-20 relative text-stroke-1 hover:text-white font-normalidadWide max-h-[52px] h-full px-[19px] w-full border border-white transition duration-300 ease-in-out">
+                    SHOP NOW
+                </button>
+            </div>
         </div>
     </section>
 
