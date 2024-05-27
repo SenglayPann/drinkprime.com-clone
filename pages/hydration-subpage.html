@@ -11,6 +11,163 @@
     <link rel="stylesheet" href="../src/style/tailwindcss.css">
     <link rel="stylesheet" href="../src/style/navbar.css">
 </head>
+<body class="mt-[50px] tab:mt-[119px] des:mt-[72px]">
+
+    <!-- navbar -->
+    <nav-bar bgMustWhite="true" textMustBlack="true" iconMustBlack="true"></nav-bar>
+
+    <!-- product-detail -->
+    <section class="w-full mt-[100px] tab:mt-[150px] flex justify-center">
+        <div class="flex flex-col items-center tab:items-start tab:flex-row w-[1200px] tab:h-[1788px]">
+            
+            <!-- image-display-in-tablet&desktop -->
+            <div class="w-[354px] scroll-image hidden tab:flex tab:flex-col tab:w-[576px]">
+                <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-bottles/bottle-front.webp" alt="front">
+                <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-bottles/bottle-side.webp" alt="side">
+                <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-bottles/bottle-back.webp" alt="back">
+            </div>
+
+            <!-- image-display-in-mobile  -->
+            <section class="flex items-center justify-center tab:hidden">
+                <div class="relative w-full max-w-3xl overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
+                    <div class="carousel-item flex-none w-full">
+                        <img src="../assets/index/product-bottles/bottle-front.webp" alt="Image 1" class="w-full">
+                    </div>
+                    <div class="carousel-item flex-none w-full">
+                        <img src="../assets/index/product-bottles/bottle-side.webp" alt="Image 2" class="w-full">
+                    </div>
+                    <div class="carousel-item flex-none w-full">
+                        <img src="../assets/index/product-bottles/bottle-back.webp" alt="Image 3" class="w-full">
+                    </div>
+                    </div>
+                    <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2" onclick="prevSlide()">
+                    &lt;
+                    </button>
+                    <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2" onclick="nextSlide()">
+                    &gt;
+                    </button>
+                </div>
+            </section>
+
+            <div class="w-[354px] h-1788 flex flex-col items-center gap-5 pt-5 tab:w-[400px] tab:sticky tab:top-[140px] relative z-1">
+                <div class="flex flex-col items-center gap-[10px] tab:items-start w-full">
+                    <h3 class="text-[18px] font-normalidadExteded text-stroke-2">STRAWBERRY BANANA</h3>
+                    <h5 class="text-[12.6px] font-normalidadExteded text-stroke-1">HYDRATION</h5>
+                    <h5 class="text-14px font-normalidadExteded text-stroke-1">12PK</h5>
+                </div>
+        
+                <div>
+                    <div class="border border-solid border-gray-300">
+                        <div class="w-[354px] h-[38px] tab:w-[400px] flex items-center gap-2  bg-gray-200 pl-3">
+                            <div class="w-3.5 h-3.5 rounded-full bg-black"></div>
+                            <h5 class="text-xs font-normalidadWide text-stroke-1">$29.99</h5>
+                            <h5 class="font-normalidadExteded text-stroke-1 text-xs pl-2 ">ONE-TIME PURCHASE</h5>
+                        </div>
+                        <div class="w-[354px] h-[38px] tab:w-[400px] flex items-center gap-2 pl-3">
+                            <div class="w-3.5 h-3.5 rounded-full bg-white border border-black border-solid"></div>
+                            <h5 class="text-xs font-normalidadWide text-stroke-1">$28.49</h5>
+                            <h5 class="text-xs pl-2 font-normalidadExteded text-stroke-1">SUBSCRIBE TO SAVE 5%</h5>
+                        </div>
+                    </div>   
+                    <p class="text-xs custom-11 pt-1">SUBSCRIBE TO RECEIVE 5% OFF EACH DELIVERY.</p>
+                </div>
+                
+                <div class="flex w-full justify-center tab:justify-start">
+                    <div class="border border-black flex gap-7 items-center justify-center w-32 h-12">
+                        <h5 class="mb-3">_</h5>
+                        <h5>1</h5>
+                        <h5>+</h5>
+                    </div>
+                </div>
+
+                <div class="flex justify-center border border-black border-solid">
+                    <button class="hover:bg-white hover:text-black transition duration-300 ease-in-out text-stroke-1 font-normalidadExteded w-[354px] text-white bg-black h-12 text-xs tab:w-[400px]">ADD TO CART</button>
+                </div>
+                
+                <div class="flex gap-[20px] justify-center">
+                    <img class="w-[60px] h-[60px]" src="../assets/index/product-sticks/PR-icon-1-Coconut_76.webp" alt="">
+                    <img class="w-[60px] h-[60px]" src="../assets/index/product-sticks/PR-icon-2-Caffeine_73.webp" alt="">
+                    <img class="w-[60px] h-[60px]" src="../assets/index/product-sticks/PR-icon-3-Electrolytes_61.webp" alt="">
+                    <img class="w-[60px] h-[60px]" src="../assets/index/product-sticks/PR-icon-4-BVitamins_21.webp" alt="">
+                    <img class="w-[60px] h-[60px]" src="../assets/index/product-sticks/PR-icon-5-Antioxidants_6.webp" alt="">
+                </div>
+                <hr class="w-[354px] tab:w-[400px]">
+        
+                <div class="w-[400px] flex justify-center tab:justify-start">
+                    <ul class="w-[200px] pl-7 list-disc flex flex-col gap-2 text-sm font-normalidad text-stroke-1">
+                        <li>Zero added sugar</li>
+                        <li>25 Calories</li>
+                        <li>10% Coconut Water</li>
+                        <li>BCAAs + B Vitamins</li>
+                        <li>Antioxidants + <br class="flex tab:hidden"> Electrolytes</li>
+                        <li>Caffeine-Free</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- title-bottles-mobile -->
+    <div class="tab:hidden block mt-[100px]">
+        <h3 class="text-[28px] text-center text-stroke-2 font-normalidadWide">YOU MAY ALSO LIKE</h3>
+        <div class="grid grid-cols-2 gap-[10px] mt-[20px]">
+            <product-card product-img-url="../assets/index/product-bottles/STRAWBERRY WATERMELON.webp" product-title="STRAWBERRY WATERMELON" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
+            <product-card product-img-url="../assets/index/product-bottles/LEMONADE.webp" product-title="LEMONADE" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
+            <product-card product-img-url="../assets/index/product-bottles/ICE POP.webp" product-title="ICE POP" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
+            <product-card product-img-url="../assets/index/product-bottles/TROPICAL PUNCH.webp" product-title="TROPICAL PUNCH" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
+        </div>
+    </div>
+
+    <!-- title-bottles-tablet  -->
+    <section class="hidden tab:flex tab:justify-center des:hidden mt-[100px]">
+        <div class="container">
+            <h3 class="text-[28px] text-center text-stroke-2 font-normalidadWide">YOU MAY ALSO LIKE</h3>
+            <div class="grid grid-cols-3 gap-[10px] mt-[20px]">
+                <product-card product-img-url="../assets/index/product-bottles/STRAWBERRY WATERMELON.webp" product-title="STRAWBERRY WATERMELON" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-bottles/LEMONADE.webp" product-title="LEMONADE" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-bottles/ICE POP.webp" product-title="ICE POP" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
+            </div>
+            <div class="w-full flex justify-center">
+                <div class="grid grid-cols-1 max-[1280px]:w-[334px] max-[1024px]:w-[259px]">
+                    <product-card product-img-url="../assets/index/product-bottles/TROPICAL PUNCH.webp" product-title="TROPICAL PUNCH" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- title-bottles-desktop  -->
+    <section class="flex justify-center mt-[100px]">
+        <div class="hidden des:block container">
+            <h3 class="text-[28px] text-center text-stroke-2 font-normalidadWide">YOU MAY ALSO LIKE</h3>
+            <div class="grid grid-cols-4 gap-[10px] mt-[20px]">
+                <product-card product-img-url="../assets/index/product-bottles/STRAWBERRY WATERMELON.webp" product-title="STRAWBERRY WATERMELON" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-bottles/LEMONADE.webp" product-title="LEMONADE" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-bottles/ICE POP.webp" product-title="ICE POP" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-bottles/TROPICAL PUNCH.webp" product-title="TROPICAL PUNCH" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <div class="mt-[50px]">
+        <prime-footer></prime-footer>
+    </div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydration Subpage</title>
+    <script src="../component/navbar.js"></script>
+    <script src="../component/productCard.js"></script>
+    <script src="../component/footer.js"></script>
+    <script defer src="../src/script/hydrationSubpage.js"></script>
+    <link rel="stylesheet" href="../src/style/tailwindcss.css">
+    <link rel="stylesheet" href="../src/style/navbar.css">
+</head>
 <body>
 
     <!-- navbar -->

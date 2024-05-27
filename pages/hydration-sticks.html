@@ -10,6 +10,133 @@
     <script src="../component/productCard.js"></script>
     <script src="../component/footer.js"></script>
 </head>
+<body class="mt-[50px] tab:mt-[119px] des:mt-[72px]">
+
+    <!-- navbar  -->
+    <nav-bar bgMustWhite="true" textMustBlack="true" iconMustBlack="true"></nav-bar>
+    
+    <!-- image-mobile  -->
+    <img class="tab:hidden w-full" src="../assets/index/product-sticks/image-stick-mobile.webp" alt="">
+
+    <!-- image-tablet-desktop -->
+    <img class="hidden tab:block w-full" src="../assets/index/product-sticks/image-stick-desk.webp" alt="">
+
+    <!-- icon  -->
+    <section class="flex justify-center">
+        <div  class="w-full h-[205px] pt-[45px] pb-[25px] flex justify-center container tab:h=[130px] tab:pt-[22px] tab:pb-[12px]">
+            <div class="flex justify-center gap-[10px] tab:gap-[40px]">
+                <img class="w-[20%] h-[85px] tab:w-[105px] tab:h-[110px]" src="../assets/index/product-sticks/PR-icon-1-Coconut_76.webp" alt="coconut water">
+                <img class="w-[20%] h-[85px] tab:w-[105px] tab:h-[110px]" src="../assets/index/product-sticks/PR-icon-2-Caffeine_73.webp" alt="caffeine free">
+                 <img class="w-[20%] h-[85px] tab:w-[105px] tab:h-[110px]" src="../assets/index/product-sticks/PR-icon-3-Electrolytes_61.webp" alt="834mg electorlytes">
+                <img class="w-[20%] h-[85px] tab:w-[105px] tab:h-[110px]" src="../assets/index/product-sticks/PR-icon-4-BVitamins_21.webp" alt="b vitamins">
+                <img class="w-[20%] h-[85px] tab:w-[105px] tab:h-[110px]" src="../assets/index/product-sticks/PR-icon-5-Antioxidants_6.webp" alt="antioxidants">
+            </div>
+        </div>
+    </section>
+
+    <!-- product-card-mobile -->
+    <section class="tab:hidden flex justify-center">
+        <div class="w-full grid grid-cols-1 gap-[30px]">
+            <div class="grid grid-cols-2">
+                <a href="./hydration-sticks-subpage.html">
+                    <product-card product-img-url="../assets/index/product-sticks/STRAWBERRY BANANA.webp" product-title="STRAWBERRY BANANA" product-size="6PK" product-price="$13.99" button-bg-color="bg-white" button-title="FIND IN STORE"></product-card>
+                </a>
+                <product-card product-img-url="../assets/index/product-sticks/CHERRY FREEZE.webp" product-title="CHERRY FREEZE" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <product-card product-img-url="../assets/index/product-sticks/STRAWBERRY WATERMELON.webp" product-title="STRAWBERRY WATERMELON" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-sticks/LEMONADE.webp" product-title="LEMONADE" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <product-card product-img-url="../assets/index/product-sticks/ICE POP.webp" product-title="ICE POP" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-sticks/BLUE RASPBERRY.webp" product-title="BLUE RASPBERRY" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <product-card product-img-url="../assets/index/product-sticks/TROPICAL PUNCH.webp" product-title="TROPICAL PUNCH" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-sticks/LEMON LIME.webp" product-title="LEMON LIME" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+            </div>
+
+            <div class="w-full flex justify-center">
+                <div class="grid grid-cols-1 w-[50%]">
+                    <product-card product-img-url="../assets/index/product-sticks/META MOON.webp" product-title="META MOON" product-size="6PK" product-price="$13.99" button-bg-color="bg-white" button-title="FIND IN STORE"></product-card>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- product-card-tablet -->
+    <section class="hidden tab:flex justify-center des:hidden w-full">
+        <div class="grid grid-cols-1 gap-[30px] w-[960px]">
+            <div class="grid grid-cols-3">
+                <a href="./hydration-sticks-subpage.html">
+                    <product-card product-img-url="../assets/index/product-sticks/STRAWBERRY BANANA.webp" product-title="STRAWBERRY BANANA" product-size="6PK" product-price="$13.99" button-bg-color="bg-white" button-title="FIND IN STORE"></product-card>
+                </a>
+                <product-card product-img-url="../assets/index/product-sticks/CHERRY FREEZE.webp" product-title="CHERRY FREEZE" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-sticks/STRAWBERRY WATERMELON.webp" product-title="STRAWBERRY WATERMELON" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+            </div>
+
+            <div class="grid grid-cols-3">
+                <product-card product-img-url="../assets/index/product-sticks/LEMONADE.webp" product-title="LEMONADE" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-sticks/ICE POP.webp" product-title="ICE POP" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-sticks/BLUE RASPBERRY.webp" product-title="BLUE RASPBERRY" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+            </div>
+
+            <div class="grid grid-cols-3">
+                <product-card product-img-url="../assets/index/product-sticks/TROPICAL PUNCH.webp" product-title="TROPICAL PUNCH" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-sticks/LEMON LIME.webp" product-title="LEMON LIME" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-sticks/META MOON.webp" product-title="META MOON" product-size="6PK" product-price="$13.99" button-bg-color="bg-white" button-title="FIND IN STORE"></product-card>  
+            </div>
+        </div>
+    </section>
+
+    <!-- product-card-desktop -->
+    <section class="hidden tab:hidden justify-center des:flex w-full">
+        <div class="grid grid-cols-1 gap-[30px] W-[1320PX]">
+            <div class="grid grid-cols-4">
+                <a href="./hydration-sticks-subpage.html">
+                    <product-card product-img-url="../assets/index/product-sticks/STRAWBERRY BANANA.webp" product-title="STRAWBERRY BANANA" product-size="6PK" product-price="$13.99" button-bg-color="bg-white" button-title="FIND IN STORE"></product-card>
+                </a>
+                <product-card product-img-url="../assets/index/product-sticks/CHERRY FREEZE.webp" product-title="CHERRY FREEZE" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-sticks/STRAWBERRY WATERMELON.webp" product-title="STRAWBERRY WATERMELON" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-sticks/LEMONADE.webp" product-title="LEMONADE" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+            </div>
+
+            <div class="grid grid-cols-4">
+                <product-card product-img-url="../assets/index/product-sticks/ICE POP.webp" product-title="ICE POP" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-sticks/BLUE RASPBERRY.webp" product-title="BLUE RASPBERRY" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-sticks/TROPICAL PUNCH.webp" product-title="TROPICAL PUNCH" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+                <product-card product-img-url="../assets/index/product-sticks/LEMON LIME.webp" product-title="LEMON LIME" product-size="6PK" product-price="$13.99" button-bg-color="bg-black" button-title=""></product-card>
+            </div>
+
+            <div class="w-full flex justify-center">
+                <div class="grid grid-cols-1">
+                    <product-card product-img-url="../assets/index/product-sticks/META MOON.webp" product-title="META MOON" product-size="6PK" product-price="$13.99" button-bg-color="bg-white" button-title="FIND IN STORE"></product-card>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <div class="mt-[115px]">
+        <prime-footer></prime-footer>
+    </div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydration + Sticks</title>
+    <link rel="stylesheet" href="../src/style/tailwindcss.css">
+    <link rel="stylesheet" href="../src/style/navbar.css">
+    <script src="../component/navbar.js"></script>
+    <script src="../component/productCard.js"></script>
+    <script src="../component/footer.js"></script>
+</head>
 <body>
 
     <!-- navbar  -->
