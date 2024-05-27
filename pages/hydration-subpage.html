@@ -7,6 +7,7 @@
     <script src="../component/navbar.js"></script>
     <script src="../component/productCard.js"></script>
     <script src="../component/footer.js"></script>
+    <script defer src="../src/script/hydrationSubpage.js"></script>
     <link rel="stylesheet" href="../src/style/tailwindcss.css">
     <link rel="stylesheet" href="../src/style/navbar.css">
 </head>
@@ -18,11 +19,36 @@
     <!-- product-detail -->
     <section class="w-full mt-[100px] tab:mt-[150px] flex justify-center">
         <div class="flex flex-col items-center tab:items-start tab:flex-row w-[1200px] tab:h-[1788px]">
-            <div class="w-[354px] scroll-image flex overflow-x-scroll tab:flex tab:flex-col tab:w-[576px] tab:overflow-x-hidden">
+            
+            <!-- image-display-in-tablet&desktop -->
+            <div class="w-[354px] scroll-image hidden tab:flex tab:flex-col tab:w-[576px]">
                 <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-bottles/bottle-front.webp" alt="front">
                 <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-bottles/bottle-side.webp" alt="side">
                 <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-bottles/bottle-back.webp" alt="back">
             </div>
+
+            <!-- image-display-in-mobile  -->
+            <section class="flex items-center justify-center tab:hidden">
+                <div class="relative w-full max-w-3xl overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
+                    <div class="carousel-item flex-none w-full">
+                        <img src="../assets/index/product-bottles/bottle-front.webp" alt="Image 1" class="w-full">
+                    </div>
+                    <div class="carousel-item flex-none w-full">
+                        <img src="../assets/index/product-bottles/bottle-side.webp" alt="Image 2" class="w-full">
+                    </div>
+                    <div class="carousel-item flex-none w-full">
+                        <img src="../assets/index/product-bottles/bottle-back.webp" alt="Image 3" class="w-full">
+                    </div>
+                    </div>
+                    <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2" onclick="prevSlide()">
+                    &lt;
+                    </button>
+                    <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2" onclick="nextSlide()">
+                    &gt;
+                    </button>
+                </div>
+            </section>
 
             <div class="w-[354px] h-1788 flex flex-col items-center gap-5 pt-5 tab:w-[400px] tab:sticky tab:top-0">
                 <div class="flex flex-col items-center gap-[10px] tab:items-start w-full">
@@ -55,8 +81,8 @@
                     </div>
                 </div>
 
-                <div class="flex justify-center">
-                    <button class="text-stroke-1 font-normalidadExteded w-[354px] text-white bg-black h-12 text-xs tab:w-[400px]">ADD TO CART</button>
+                <div class="flex justify-center border border-black border-solid">
+                    <button class="hover:bg-white hover:text-black transition duration-300 ease-in-out text-stroke-1 font-normalidadExteded w-[354px] text-white bg-black h-12 text-xs tab:w-[400px]">ADD TO CART</button>
                 </div>
                 
                 <div class="flex gap-[20px] justify-center">
@@ -68,13 +94,13 @@
                 </div>
                 <hr class="w-[354px] tab:w-[400px]">
         
-                <div class="w-[400px] flex justify-center">
-                    <ul class="w-full pl-7 list-disc flex flex-col gap-2 text-sm font-normalidad">
+                <div class="w-[400px] flex justify-center tab:justify-start">
+                    <ul class="w-[200px] pl-7 list-disc flex flex-col gap-2 text-sm font-normalidad text-stroke-1">
                         <li>Zero added sugar</li>
                         <li>25 Calories</li>
                         <li>10% Coconut Water</li>
                         <li>BCAAs + B Vitamins</li>
-                        <li>Antioxidants + Electrolytes</li>
+                        <li>Antioxidants + <br class="flex tab:hidden"> Electrolytes</li>
                         <li>Caffeine-Free</li>
                     </ul>
                 </div>
@@ -103,7 +129,7 @@
                 <product-card product-img-url="../assets/index/product-bottles/ICE POP.webp" product-title="ICE POP" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
             </div>
             <div class="w-full flex justify-center">
-                <div class="grid grid-cols-1">
+                <div class="grid grid-cols-1 max-[1280px]:w-[334px] max-[1024px]:w-[259px]">
                     <product-card product-img-url="../assets/index/product-bottles/TROPICAL PUNCH.webp" product-title="TROPICAL PUNCH" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
                 </div>
             </div>

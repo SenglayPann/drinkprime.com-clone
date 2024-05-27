@@ -1095,6 +1095,10 @@ video {
   display: block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -2337,6 +2341,10 @@ video {
   transition-duration: 500ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2463,6 +2471,56 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (max-width: 1280px) {
+  .max-\[1280px\]\:w-\[334px\] {
+    width: 334px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .max-\[1270px\]\:w-\[\] {
+    width: ;
+  }
+
+  .max-\[1270px\]\:w-\[330px\] {
+    width: 330px;
+  }
+
+  .max-\[1270px\]\:w-\[334px\] {
+    width: 334px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .max-\[1024px\]\:w-\[\] {
+    width: ;
+  }
+
+  .max-\[1024px\]\:w-\[259px\] {
+    width: 259px;
+  }
+}
+
+@media (max-width: 900px) {
+  .max-\[900px\]\:w-\[\] {
+    width: ;
+  }
+
+  .max-\[900px\]\:w-\[350px\] {
+    width: 350px;
+  }
+}
+
+@media (max-width: 798px) {
+  .max-\[798px\]\:w-\[280px\] {
+    width: 280px;
+  }
+
+  .max-\[798px\]\:w-\[200px\] {
+    width: 200px;
+  }
+}
+
 @media (max-width: 480px) {
   .max-\[480px\]\:text-\[12px\] {
     font-size: 12px;
@@ -2470,6 +2528,20 @@ body {
 
   .max-\[480px\]\:text-\[9px\] {
     font-size: 9px;
+  }
+}
+
+@media (min-width: 550px) {
+  .min-\[550px\]\:w-\[\] {
+    width: ;
+  }
+
+  .min-\[550px\]\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .min-\[550px\]\:w-\[350px\] {
+    width: 350px;
   }
 }
 
@@ -2772,6 +2844,36 @@ body {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
+
+  .min-\[798px\]\:w-\[\] {
+    width: ;
+  }
+
+  .min-\[798px\]\:w-\[280px\] {
+    width: 280px;
+  }
+
+  .min-\[798px\]\:w-\[200px\] {
+    width: 200px;
+  }
+
+  .min-\[798px\]\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .min-\[798px\]\:w-\[350px\] {
+    width: 350px;
+  }
+
+  .min-\[798px\]\:p-5 {
+    padding: 1.25rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .min-\[900px\]\:p-5 {
+    padding: 1.25rem;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -2953,6 +3055,12 @@ body {
 
   .des\:no-underline {
     text-decoration-line: none;
+  }
+}
+
+@media (min-width: px) {
+  .min-\[px\]\:p-5 {
+    padding: 1.25rem;
   }
 }
 
