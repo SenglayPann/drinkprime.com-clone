@@ -11,145 +11,6 @@
     <link rel="stylesheet" href="../src/style/navbar.css">
     <script defer src="../src/script/hydrationStickSubpage.js"></script>
 </head>
-<body>
-
-    <!-- navbar -->
-    <nav-bar></nav-bar>
-
-    <!-- Product-sticks -->
-    <section class="mt-[100px] tab:mt-[150px] w-full flex justify-center des:mt-[120px]">
-        <div class="container flex flex-col items-center w-[1200px] tab:flex-row tab:items-start">
-            
-            <div class="w-[354px] scroll-image hidden tab:flex tab:flex-col tab:w-[576px]">
-                <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-sticks/SBSticksFront_2000x.webp" alt="front">
-                <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-sticks/SBSticksSide_600x.webp" alt="side">
-                <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-sticks/SBSticksBack_600x.webp" alt="back">
-            </div>
-
-    <!-- product-stick-diplay-mobile  -->
-            <section class="flex items-center justify-center tab:hidden">
-                <div class="relative w-full max-w-3xl overflow-hidden">
-                    <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
-                    <div class="carousel-item flex-none w-full">
-                        <img src="../assets/index/product-sticks/SBSticksFront_2000x.webp" alt="Image 1" class="w-full">
-                    </div>
-                    <div class="carousel-item flex-none w-full">
-                        <img src="../assets/index/product-sticks/SBSticksSide_600x.webp" alt="Image 2" class="w-full">
-                    </div>
-                    <div class="carousel-item flex-none w-full">
-                        <img src="../assets/index/product-sticks/SBSticksBack_600x.webp" alt="Image 3" class="w-full">
-                    </div>
-                    </div>
-                    <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2" onclick="prevSlide()">
-                    &lt;
-                    </button>
-                    <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2" onclick="nextSlide()">
-                    &gt;
-                    </button>
-                </div>
-            </section>
-
-
-            <div class="w-[354px] h-1788 flex flex-col items-center gap-5 pt-5 tab:w-[400px] sticky top-0">
-                <div class="w-full flex flex-col gap-2 items-center tab:items-start">
-                    <h3 class="text-lg font-normalidadExteded text-stroke-2">STRAWBERRY BANANA</h3>
-                    <h5 class=" text-xs font-normalidadExteded text-stroke-1">HYDRATION</h5>
-                    <h5 class="text-sm text-stroke-1 font-normalidadExteded">6PK</h5>
-                    <h5 class="text-base font-normalidadExteded text-stroke-1">$13.99</h5>
-                </div>
-        
-                <div class="flex flex-col gap-3 justify-center tab:flex-row">
-                    <input class="font-normalidadWide text-center text-lg border-solid border-black border h-12 w-[354px] tab:w-[270px] tab:text-xs tab:text-start tab:pl-3" placeholder="EMAIL ADDRESS" type="email">
-                    <h5 class="text-stroke-1 flex items-center justify-center border border-solid border-black w-[354px] h-12 font-normalidadWide text-lg tab:w-[120px] tab:text-xs">NOTIFY ME</h5>
-                </div>
-                <div class=" flex justify-center">
-                    <button class="text-stroke-1 font-normalidadExteded w-[354px] text-white bg-black h-12 text-xs tab:w-[400px]">FIND IN STORE</button>
-                </div>
-        
-                <div class="w-[354px] flex gap-[25px] justify-center">
-                    <img class="w-12 h-12" src="../assets/index/product-sticks/PR-icon-1-Coconut_76.webp" alt="coconut water">
-                    <img class="w-12 h-12" src="../assets/index/product-sticks/PR-icon-2-Caffeine_73.webp" alt="caffeine free">
-                    <img class="w-12 h-12"  src="../assets/index/product-sticks/PR-icon-3-Electrolytes_61.webp" alt="834mg electorlytes">
-                    <img class="w-12 h-12"  src="../assets/index/product-sticks/PR-icon-4-BVitamins_21.webp" alt="b vitamins">
-                    <img class="w-12 h-12"  src="../assets/index/product-sticks/PR-icon-5-Antioxidants_6.webp" alt="antioxidants">
-                </div>
-        
-                <hr class="w-[354px] tab:w-[400px]">
-                <div class="w-[400px] flex justify-center tab:justify-start">
-                    <ul class="w-[200px] pl-7 list-disc flex flex-col gap-2 text-sm font-normalidad text-stroke-1">
-                        <li>Zero added sugar</li>
-                        <li>20 Calories</li>
-                        <li>10% Coconut Water</li>
-                        <li>BCAAs + B Vitamins</li>
-                        <li>Antioxidants + <br class="flex tab:hidden">Electrolytes</li>
-                        <li>Caffeine-Free</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- title-bottles-mobile -->
-    <div class="tab:hidden block mt-[100px]">
-        <h3 class="text-[28px] text-center text-stroke-2 font-normalidadWide">YOU MAY ALSO LIKE</h3>
-        <div class="grid grid-cols-2 gap-[10px] mt-[20px]">
-            <product-card product-img-url="../assets/index/product-bottles/STRAWBERRY WATERMELON.webp" product-title="STRAWBERRY WATERMELON" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            <product-card product-img-url="../assets/index/product-bottles/LEMONADE.webp" product-title="LEMONADE" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            <product-card product-img-url="../assets/index/product-bottles/ICE POP.webp" product-title="ICE POP" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            <product-card product-img-url="../assets/index/product-bottles/TROPICAL PUNCH.webp" product-title="TROPICAL PUNCH" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-        </div>
-    </div>
-    
-    <!-- title-bottles-tablet  -->
-    <section class="hidden tab:flex tab:justify-center des:hidden mt-[100px]">
-        <div class="container">
-            <h3 class="text-[28px] text-center text-stroke-2 font-normalidadWide">YOU MAY ALSO LIKE</h3>
-            <div class="grid grid-cols-3 gap-[10px] mt-[20px]">
-                <product-card product-img-url="../assets/index/product-bottles/STRAWBERRY WATERMELON.webp" product-title="STRAWBERRY WATERMELON" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/LEMONADE.webp" product-title="LEMONADE" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/ICE POP.webp" product-title="ICE POP" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            </div>
-            <div class="w-full flex justify-center">
-                <div class="grid grid-cols-1 max-[1280px]:w-[334px] max-[1024px]:w-[259px]">
-                    <product-card product-img-url="../assets/index/product-bottles/TROPICAL PUNCH.webp" product-title="TROPICAL PUNCH" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- title-bottles-desktop  -->
-    <section class="flex justify-center mt-[100px]">
-        <div class="hidden des:block container">
-            <h3 class="text-[28px] text-center text-stroke-2 font-normalidadWide">YOU MAY ALSO LIKE</h3>
-            <div class="grid grid-cols-4 gap-[10px] mt-[20px]">
-                <product-card product-img-url="../assets/index/product-bottles/STRAWBERRY WATERMELON.webp" product-title="STRAWBERRY WATERMELON" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/LEMONADE.webp" product-title="LEMONADE" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/ICE POP.webp" product-title="ICE POP" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/TROPICAL PUNCH.webp" product-title="TROPICAL PUNCH" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            </div>
-        </div>
-    </section>
-
-    <!-- footer -->
-    <div class="mt-[50px]">
-        <prime-footer></prime-footer>
-    </div>
-    
-   
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hydration + Sticks Subpage</title>
-    <script src="../component/navbar.js"></script>
-    <script src="../component/footer.js"></script>
-    <script src="../component/productCard.js"></script>
-    <link rel="stylesheet" href="../src/style/tailwindcss.css">
-    <link rel="stylesheet" href="../src/style/navbar.css">
-    <script defer src="../src/script/hydrationStickSubpage.js"></script>
-</head>
 <body class="mt-[50px] tab:mt-[119px] des:mt-[72px]">
 
     <!-- navbar -->
@@ -169,15 +30,15 @@
             <section class="flex items-center justify-center tab:hidden">
                 <div class="relative w-full max-w-3xl overflow-hidden">
                     <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
-                    <div class="carousel-item flex-none w-full">
-                        <img src="../assets/index/product-sticks/SBSticksFront_2000x.webp" alt="Image 1" class="w-full">
-                    </div>
-                    <div class="carousel-item flex-none w-full">
-                        <img src="../assets/index/product-sticks/SBSticksSide_600x.webp" alt="Image 2" class="w-full">
-                    </div>
-                    <div class="carousel-item flex-none w-full">
-                        <img src="../assets/index/product-sticks/SBSticksBack_600x.webp" alt="Image 3" class="w-full">
-                    </div>
+                        <div class="carousel-item flex-none w-full">
+                            <img src="../assets/index/product-sticks/SBSticksFront_2000x.webp" alt="Image 1" class="w-full">
+                        </div>
+                        <div class="carousel-item flex-none w-full">
+                            <img src="../assets/index/product-sticks/SBSticksSide_600x.webp" alt="Image 2" class="w-full">
+                        </div>
+                        <div class="carousel-item flex-none w-full">
+                            <img src="../assets/index/product-sticks/SBSticksBack_600x.webp" alt="Image 3" class="w-full">
+                        </div>
                     </div>
                     <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2" onclick="prevSlide()">
                     &lt;
@@ -189,7 +50,7 @@
             </section>
 
 
-            <div class="w-[354px] h-1788 flex flex-col items-center gap-5 pt-5 tab:w-[400px] tab:sticky tab:top-[130px]">
+            <div class="w-[354px] h-1788 flex flex-col items-center gap-5 pt-5 tab:w-[400px] sticky top-[120px]">
                 <div class="w-full flex flex-col gap-2 items-center tab:items-start">
                     <h3 class="text-lg font-normalidadExteded text-stroke-2">STRAWBERRY BANANA</h3>
                     <h5 class=" text-xs font-normalidadExteded text-stroke-1">HYDRATION</h5>

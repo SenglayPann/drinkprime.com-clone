@@ -15,17 +15,42 @@ class productCard extends HTMLElement {
         const image1 = this.getAttribute("imagefront");
         const image2 = this.getAttribute("imageside");
         const image3 = this.getAttribute("imageback");
+        const imageMobile1 = this.getAttribute("imageFrontMobile");
+        const imageMobile2 = this.getAttribute("imageSideMobile");
+        const imageMobile3 = this.getAttribute("imageBackMobile");
 
         this.innerHTML = ` 
         <section class="w-full flex justify-center">
             <div class="container flex flex-col items-center w-[1200px] tab:flex-row tab:items-start">
-                <div class="w-[354px] scroll-image flex overflow-x-scroll tab:flex tab:flex-col tab:w-[576px] tab:overflow-x-hidden">
-                    <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="${image1}" alt="front">
-                    <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="${image2}" alt="side">
-                    <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="${image3}" alt="back">
-                </div>
+            <div class="w-[354px] scroll-image hidden tab:flex tab:flex-col tab:w-[576px]">
+                <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-sticks/SBSticksFront_2000x.webp" alt="front">
+                <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-sticks/SBSticksSide_600x.webp" alt="side">
+                <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-sticks/SBSticksBack_600x.webp" alt="back">
+            </div>
 
-                <div class="w-[354px] h-1788 flex flex-col items-center gap-5 pt-5 tab:w-[400px] sticky top-0">
+            <div class="flex items-center justify-center tab:hidden">
+                <div class="relative w-full max-w-3xl overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
+                        <div class="carousel-item flex-none w-full">
+                            <img src="${imageMobile1}" alt="Image 1" class="w-full">
+                        </div>
+                        <div class="carousel-item flex-none w-full">
+                            <img src="${imageMobile2}" alt="Image 2" class="w-full">
+                        </div>
+                        <div class="carousel-item flex-none w-full">
+                            <img src="${imageMobile3}" alt="Image 3" class="w-full">
+                        </div>
+                    </div>
+                    <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2" onclick="prevSlide()">
+                    &lt;
+                    </button>
+                    <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2" onclick="nextSlide()">
+                    &gt;
+                    </button>
+                </div>
+            </div>
+
+                <div class="w-[354px] h-1788 flex flex-col items-center gap-5 pt-5 tab:w-[400px] tab:sticky tab:top-0">
                     <div class="w-full flex flex-col gap-2 items-center tab:items-start">
                         <h3 class="text-lg font-normalidadExteded text-stroke-2">${title}</h3>
                         <h5 class=" text-xs font-normalidadExteded text-stroke-1">${brand}</h5>
@@ -46,8 +71,8 @@ class productCard extends HTMLElement {
                     </div>
             
                     <hr class="w-[354px] tab:w-[400px]">
-                    <div class="w-[400px]">
-                        <ul class="w-full pl-7 list-disc flex flex-col gap-2 text-sm">
+                    <div class="w-[400px] flex justify-center tab:justify-start">
+                        <ul class="w-[200px] pl-7 list-disc flex flex-col gap-2 text-sm font-normalidad text-stroke-1">
                             <li>${li1}</li>
                             <li>${li2}</li>
                             <li>${li3}</li>

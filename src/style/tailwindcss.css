@@ -1889,10 +1889,6 @@ video {
   letter-spacing: 4px;
 }
 
-.tracking-\[5px\] {
-  letter-spacing: 5px;
-}
-
 .tracking-wide {
   letter-spacing: 0.025em;
 }
@@ -1903,6 +1899,10 @@ video {
 
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+
+.tracking-\[5px\] {
+  letter-spacing: 5px;
 }
 
 .text-black {
@@ -2167,16 +2167,16 @@ body {
     top: 140px;
   }
 
-  .tab\:top-\[65\%\] {
-    top: 65%;
-  }
-
   .tab\:top-\[70\%\] {
     top: 70%;
   }
 
   .tab\:top-\[120px\] {
     top: 120px;
+  }
+
+  .tab\:top-\[65\%\] {
+    top: 65%;
   }
 
   .tab\:order-2 {
