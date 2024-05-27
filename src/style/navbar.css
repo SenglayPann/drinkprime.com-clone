@@ -1,6 +1,9 @@
 .right-icon #us {
     transition: all .45s ease-in-out;
 }
+.right-icon {
+    transition: all .45s ease;
+}
 
 #side-bar {
     transition: left .42s ease-out;
