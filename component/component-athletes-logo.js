@@ -31,7 +31,7 @@ logosData.forEach(logo => {
     logoName.textContent = logo.name;
     logoName.classList.add("text-sm", "font-normalidadExteded");
     logoName.style.marginTop = "8px";
-    logoName.style.webkitTextStroke = "1px white";
+    logoName.style.webkitTextStroke = "1px black";
     logoName.style.letterSpacing = "1.87px";
     logoName.style.fontWeight = "500";
 
