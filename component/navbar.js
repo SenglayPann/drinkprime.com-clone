@@ -14,7 +14,7 @@ class Navbar extends HTMLElement {
 
 
         this.setAttribute('id', 'navbar-container');
-        this.setAttribute('class', ` fixed top-0 w-full flex tab:flex-col tab:items-center des:flex-row des:border-b tab:hover:bg-white hover:text-black text-white ${textMustBlack}  transition-colors ease-in-out duration-[450ms] ${bgMustWhite} `);
+        this.setAttribute('class', ` z-50 fixed top-0 w-full flex tab:flex-col tab:items-center des:flex-row des:border-b tab:hover:bg-white hover:text-black text-white ${textMustBlack}  transition-colors ease-in-out duration-[450ms] ${bgMustWhite} `);
         this.innerHTML = `
                 <!-- main navbar -->
                 <div id="main-navbar" class="flex items-center justify-between px-[23px] des:px-0 tab:pr-[20px] border-b tab:border-none tab:order-2 w-full des:w-[calc(50%_+_55px)] des:justify-normal tab:py-[11px] tab:px-[7px] des:pr-[76px]">
@@ -467,6 +467,8 @@ class Navbar extends HTMLElement {
         const searchInput = document.getElementById('search-input');
         const searchOpenBtn = document.getElementById('search-open-btn');
         const searchClosingBtn = document.getElementById('search-closing-btn');
+        let scrolledDown = false;
+        let sideBarOpened = false;
         
         // seach open botton
         searchOpenBtn.addEventListener('click', () => {
@@ -531,18 +533,15 @@ class Navbar extends HTMLElement {
             hamburgerIcon.classList.toggle('opacity-0');
             navBar.classList.toggle('bg-white');
             sideBar.classList.toggle('left-[calc(-100%)]');
-
+            sideBarOpened = !sideBarOpened
             Array.from(icons).forEach(icon => {
-                if (!iconMustBlack) {
-                    if (!icon.classList.contains('must-fill-white')) {
-                        icon.classList.add('must-fill-white')
-                    } else icon.classList.remove('must-fill-white');
+                if (!scrolledDown && !icon.classList.contains('icon-must-black')) {
+                    icon.classList.add('icon-must-black');
+                    icon.classList.remove('must-fill-white');
+                }else if (scrolledDown && !icon.classList.contains('icon-must-black')) {
+                    icon.classList.remove('icon-must-black');
+                    icon.classList.add('must-fill-white');
                 }
-
-                if (icon.classList.contains('fill-white')) {
-                    icon.classList.toggle('fill-black')
-                    icon.classList.toggle('fill-white')
-                };
             });
         });
 
@@ -571,14 +570,13 @@ class Navbar extends HTMLElement {
                     icon.classList.remove('fill-black');
                     icon.classList.add('fill-white');
                     icon.classList.remove('must-fill-white');
+
                 });
             }else
             Array.from(icons).forEach(icon => {
                 icon.classList.remove('fill-black');
                 icon.classList.add('fill-white');
-                if (!iconMustBlack) {
-                    icon.classList.add('must-fill-white')
-                }
+                icon.classList.add('icon-must-black')
             });
         });
 
@@ -586,6 +584,7 @@ class Navbar extends HTMLElement {
         window.addEventListener('scroll', () => {
             if (!bgMustWhite || !textMustBlack || !iconMustBlack) {
                 if (window.scrollY > 0) {
+                    scrolledDown = true
                     navBar.classList.add('text-must-black');
                     navBar.classList.add('bg-must-white');
                     Array.from(icons).forEach(icon => {
@@ -593,12 +592,14 @@ class Navbar extends HTMLElement {
                         icon.classList.remove('must-fill-white');
                     });
                 } else {
+                    scrolledDown = false
                     navBar.classList.remove('text-must-black');
                     navBar.classList.remove('bg-must-white');
-                    Array.from(icons).forEach(icon => {
-                        icon.classList.remove('icon-must-black');
-                        icon.classList.add('must-fill-white');
-                    });
+                    if (!sideBarOpened) {
+                        Array.from(icons).forEach(icon => {
+                            icon.classList.remove('icon-must-black');
+                        });
+                    }
                 }
             }
         });
