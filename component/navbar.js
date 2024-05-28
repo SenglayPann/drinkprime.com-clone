@@ -10,11 +10,11 @@ class Navbar extends HTMLElement {
         const bgMustWhite = this.getAttribute('bgMustWhite') === 'true' ? 'bg-must-white' : '';
         const textMustBlack = this.getAttribute('textMustBlack') === 'true' ? 'text-must-black' : '';
         const iconMustBlack = this.getAttribute('iconMustBlack')  === 'true' ? 'icon-must-black' : '';
-
+        const usBorder = this.getAttribute('bgMustWhite') === 'true' ? 'border-black' : 'border-white';
 
 
         this.setAttribute('id', 'navbar-container');
-        this.setAttribute('class', ` fixed top-0 w-full flex tab:flex-col tab:items-center des:flex-row des:border-b tab:hover:bg-white hover:text-black text-white ${textMustBlack}  transition-colors ease-in-out duration-[450ms] ${bgMustWhite} `);
+        this.setAttribute('class', ` z-50 fixed top-0 w-full flex tab:flex-col tab:items-center des:flex-row des:border-b tab:hover:bg-white hover:text-black text-white ${textMustBlack}  transition-colors ease-in-out duration-[450ms] ${bgMustWhite} `);
         this.innerHTML = `
                 <!-- main navbar -->
                 <div id="main-navbar" class="flex items-center justify-between px-[23px] des:px-0 tab:pr-[20px] border-b tab:border-none tab:order-2 w-full des:w-[calc(50%_+_55px)] des:justify-normal tab:py-[11px] tab:px-[7px] des:pr-[76px]">
@@ -238,7 +238,7 @@ class Navbar extends HTMLElement {
                     <!-- coutry selection section -->
                     <div id="main-nav-left" class="order-1 tab:order-none hidden tab:flex tab:pl-[20px] des:pl-0  des:pr-[40px] items-center des:order-1 gap-1 font-normalidadWide text-[12px]  text-stroke-semibold tracking-[.17em]">
                         <a href="#">SHIP TO</a>
-                        <a href="#" id="us" class="border border-white px-3 py-2">US</a>
+                        <a href="#" id="us" class="border ${usBorder} px-3 py-2">US</a>
                         <a href="#" id="uk" class=" border-black/0 border  hover:border-black/100 transition-[border-opacity] px-3 py-2">UK</a>
                     </div>
 
@@ -250,7 +250,7 @@ class Navbar extends HTMLElement {
                     <div id="main-nav-right" class=" order-2 flex items-center gap-6">
 
                         <!-- account icon-->
-                        <a class="right-icon hidden tab:block cursor-pointer" href="${customPath}/login.html">
+                        <a class=" hidden tab:block cursor-pointer" href="${customPath}/login.html">
                             <svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-1278.000000, -68.000000)" fill-rule="nonzero"> <g transform="translate(0.000000, 42.000000)"> <g id="account" transform="translate(1278.000000, 26.000000)"> <polygon id="Path" fill="#000000" points="16.6285714 17.5261905 16.6285714 17.5261905 16.6261905 17.5261905"></polygon>
                                     <path class="${iconMustBlack}  right-icon fill-white w-[20px]" d="M19.8809535,10.1785714 C19.8831145,5.62161598 16.7864899,1.64677886 12.3674382,0.534200985 C7.94838648,-0.578376891 3.33876326,1.45627002 1.18285062,5.47097901 C-0.973062025,9.485688 -0.123068307,14.4521681 3.2452381,17.5214286 L3.2452381,17.5214286 L3.28095238,17.552381 L3.28095238,17.552381 C7.06025697,20.9698251 12.8135526,20.9698251 16.5928571,17.552381 L16.5928571,17.552381 L16.6238095,17.5238095 C18.6920899,15.6408949 19.8739986,12.9755525 19.8809535,10.1785714 Z M8.80952381,11.7571429 L8.80952381,11.7571429 C9.09553807,11.6985776 9.30822276,11.4577292 9.33095238,11.1666667 L9.33095238,11.1142857 C9.32896945,10.8431305 9.16063876,10.601037 8.90714286,10.5047619 C7.78144778,10.0713048 7.03668465,8.99196534 7.03095238,7.78571429 C7.03183749,6.31622456 8.12917642,5.07846273 9.58797014,4.90148327 C11.0467639,4.72450382 12.4082413,5.66396441 12.7604832,7.09061311 C13.112725,8.51726181 12.3449559,9.98243678 10.9714286,10.5047619 L10.9714286,10.5047619 C10.7167516,10.6022197 10.5483129,10.8463611 10.547619,11.1190476 L10.547619,11.1714286 C10.5728836,11.4609284 10.7846558,11.6997765 11.0690476,11.7595238 L11.0690476,11.7595238 C13.4970995,12.2602238 15.3010174,14.3068647 15.4928571,16.7785714 C12.2865983,19.4867086 7.59435403,19.4867086 4.38809524,16.7785714 C4.57786618,14.3063384 6.38119213,12.2582961 8.80952381,11.7571429 Z M14.1571429,7.78809524 C14.1626958,5.8467386 12.8420381,4.15247062 10.9580481,3.68398574 C9.07405809,3.21550087 7.11366894,4.09388297 6.20930006,5.81173435 C5.30493119,7.52958574 5.69032438,9.64291317 7.14285714,10.9309524 C5.18219048,11.7965271 3.73921929,13.5293258 3.24285714,15.6142857 C0.349062277,12.0500211 0.754047381,6.84368037 4.16420448,3.76978063 C7.57436157,0.695880886 12.7946655,0.831612189 16.0404762,4.07857143 C19.1716554,7.20047301 19.428942,12.1866872 16.6357143,15.6142857 C16.1434141,13.5302849 14.7036202,11.7970692 12.7452381,10.9309524 C13.6387045,10.1298156 14.1516004,8.98812508 14.1571429,7.78809524 Z" id="Shape">
                                     </path>
@@ -259,7 +259,7 @@ class Navbar extends HTMLElement {
                         </a>
 
                         <!-- search btn-->
-                        <div id="search-open-btn" class="right-icon cursor-pointer">
+                        <div id="search-open-btn" class=" cursor-pointer">
                             <svg  width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-1324.000000, -68.000000)" fill="#FFFFFF" fill-rule="nonzero"> <g transform="translate(0.000000, 42.000000)"> <g id="search" transform="translate(1324.000000, 26.000000)"> 
                                     <path class="${iconMustBlack} right-icon fill-white w-[20px]" d="M19.6964706,18.7811765 L19.6964706,18.7811765 L12.7505882,11.8352941 C15.1779771,8.91864329 14.8823982,4.60871793 12.0795556,2.05076139 C9.27671295,-0.507195143 4.95778918,-0.408600398 2.27459439,2.27459439 C-0.408600398,4.95778918 -0.507195143,9.27671295 2.05076139,12.0795556 C4.60871793,14.8823982 8.91864329,15.1779771 11.8352941,12.7505882 L18.7788235,19.6941176 L18.7788235,19.6941176 C19.0315146,19.9425603 19.4367207,19.9425603 19.6894118,19.6941176 L19.6894118,19.6941176 C19.9378544,19.4414266 19.9378544,19.0362205 19.6894118,18.7835294 L19.6964706,18.7811765 Z M7.31294118,13.0988273 C4.54862957,13.1019621 2.1672401,11.1515334 1.62568029,8.44078784 C1.08412048,5.73004229 2.53329677,3.01433313 5.08661925,1.95510096 C7.63994174,0.89586879 10.5859234,1.7882702 12.1222455,4.08634395 C13.6585675,6.3844177 13.3571317,9.44780219 11.4023529,11.4023529 C10.3192121,12.4893963 8.84749527,13.0999302 7.31294118,13.0988273 Z" id="Shape">
                                     </path>
@@ -268,7 +268,7 @@ class Navbar extends HTMLElement {
                         </div>
 
                         <!-- shop icon -->
-                        <div class="right-icon cursor-pointer">
+                        <div class=" cursor-pointer">
                             <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-1370.000000, -68.000000)" fill="#FFFFFF" fill-rule="nonzero"> <g transform="translate(0.000000, 42.000000)"> <g id="cart" transform="translate(1370.000000, 26.000000)"> 
                                     <path class="${iconMustBlack} right-icon fill-white w-[20px]" d="M19.7285714,6.47619048 L19.7285714,6.47619048 C19.6050006,6.32587318 19.4207793,6.2385645 19.2261905,6.23809524 L16.2833333,6.23809524 L16.2833333,1.58095238 C16.2820275,1.21987966 15.9896441,0.927496358 15.6285714,0.926190476 L13.2261905,0.926190476 C13.0032999,0.370964205 12.4673198,0.00518125147 11.8690476,0 L8.01428571,0 C7.41386905,0.00195029399 6.87486345,0.368511794 6.65238095,0.926190476 L4.2547619,0.926190476 C3.89314689,0.926190476 3.6,1.21933737 3.6,1.58095238 L3.6,6.24047619 L0.654761905,6.24047619 C0.459638086,6.24156072 0.27493431,6.32868514 0.15,6.47857143 L0.15,6.47857143 C0.0543283544,6.59465734 0.0013807556,6.74005313 0,6.89047619 C0.000420136499,6.93201055 0.00440299576,6.97343228 0.0119047619,7.01428571 L2.31666667,19.347619 L2.31666667,19.347619 C2.37311908,19.658205 2.64384945,19.8838137 2.95952381,19.8833341 L16.9238095,19.8833341 C17.2389354,19.8836252 17.5088791,19.6578359 17.5642857,19.347619 L17.5642857,19.347619 L19.8714286,7.01428571 L19.8714286,7.01428571 C19.8749569,6.97706756 19.8749569,6.93959911 19.8714286,6.90238095 C19.8770792,6.74769254 19.8263077,6.59622405 19.7285714,6.47619048 Z M6.66666667,2.23571429 C6.89220316,2.78953668 7.4282332,3.15377426 8.02619048,3.15952381 L11.8690476,3.15952381 C12.4669368,3.15538182 13.0030777,2.79042978 13.2261905,2.23571429 L14.9738095,2.23571429 L14.9738095,6.24047619 L4.90952381,6.24047619 L4.90952381,2.23571429 L6.66666667,2.23571429 Z M12.047619,1.68095238 C12.047361,1.72568759 12.0293813,1.76849655 11.997619,1.8 C11.966999,1.83162336 11.9249693,1.8496361 11.8809524,1.8500032 L8.01428571,1.8500032 C7.96944221,1.85027983 7.92643331,1.8322161 7.8952381,1.8 C7.86253867,1.76913741 7.84438237,1.72590813 7.84520916,1.68095238 L7.84520916,1.47857143 C7.84520916,1.38520901 7.92092329,1.30952381 8.01428571,1.30952381 L11.8690476,1.30952381 C11.9614789,1.31082579 12.0357235,1.38613098 12.0357143,1.47857143 L12.047619,1.68095238 Z M16.3785714,18.5714286 L3.50238095,18.5714286 L1.44285714,7.55 L18.4380952,7.55 L16.3785714,18.5714286 Z" id="Shape">
@@ -444,7 +444,7 @@ class Navbar extends HTMLElement {
                 </div>
 
                 <!-- search bar -->
-                <div id="search-bar-overlay" class=" absolute tab:hidden -z-10 opacity-0 font-normalidadExteded w-full h-screen bg-[rgba(0,_0,_0,_.2)] tab:bg-transparent top-0 left-0"></div>
+                <div id="search-bar-overlay" class=" absolute hidden tab:hidden -z-10 opacity-0 font-normalidadExteded w-full h-screen bg-[rgba(0,_0,_0,_.2)] tab:bg-transparent top-0 left-0"></div>
 
                 <div id="search-bar" class="absolute -z-10 opacity-0 font-normalidadExteded w-full h-[74px] top-0 left-0">
                     <div id="inner-search-bar" class="flex items-center bg-white">
@@ -459,7 +459,7 @@ class Navbar extends HTMLElement {
         const hambugerBarToggle = document.getElementById('side-bar-closing-button');
         const hamburgerIcon = document.getElementById('hamburger-icon');
         const navBar = document.getElementById('navbar-container');
-        const sideBar = document.getElementById('side-bar');;
+        const sideBar = document.getElementById('side-bar');
         const arrows = document.getElementsByClassName('acc-arrow');
         const icons = document.getElementsByClassName('right-icon');
         const searchBarOverlay = document.getElementById('search-bar-overlay');
@@ -467,12 +467,17 @@ class Navbar extends HTMLElement {
         const searchInput = document.getElementById('search-input');
         const searchOpenBtn = document.getElementById('search-open-btn');
         const searchClosingBtn = document.getElementById('search-closing-btn');
+        let scrolledDown = false;
+        let sideBarOpened = false;
         
         // seach open botton
         searchOpenBtn.addEventListener('click', () => {
-            searchBarOverlay.classList.add('z-20');
-            searchBarOverlay.classList.remove('-z-10');
-            searchBarOverlay.classList.remove('opacity-0');
+            searchBarOverlay.classList.remove('hidden');
+            setTimeout(() => {
+                searchBarOverlay.classList.add('z-20');
+                searchBarOverlay.classList.remove('-z-10');
+                searchBarOverlay.classList.remove('opacity-0');
+            }, 50);
             searchBar.classList.add('z-20');
             searchBar.classList.remove('-z-10');
             searchBar.classList.remove('opacity-0');
@@ -481,6 +486,12 @@ class Navbar extends HTMLElement {
         
         // search close button
         searchClosingBtn.addEventListener('click', () => {
+            searchBarOverlay.classList.add('z-20');
+            searchBarOverlay.classList.remove('-z-10');
+            searchBarOverlay.classList.add('opacity-0');
+            setTimeout(() => {
+                searchBarOverlay.classList.add('hidden');
+            }, 400);
             searchBarOverlay.classList.add('-z-10');
             searchBarOverlay.classList.remove('z-20');
             searchBarOverlay.classList.add('opacity-0');
@@ -492,9 +503,12 @@ class Navbar extends HTMLElement {
         // take search bar overlay as navbar closing button
         window.addEventListener('click', (e) => {
             if (e.target.closest('#search-bar-overlay') && !e.target.closest('#search-bar')) {
-                searchBarOverlay.classList.add('-z-10');
-                searchBarOverlay.classList.remove('z-20');
+                searchBarOverlay.classList.add('z-20');
+                searchBarOverlay.classList.remove('-z-10');
                 searchBarOverlay.classList.add('opacity-0');
+                setTimeout(() => {
+                    searchBarOverlay.classList.add('hidden');
+                }, 400);
                 searchBar.classList.add('-z-10');
                 searchBar.classList.remove('z-20');
                 searchBar.classList.add('opacity-0');
@@ -519,18 +533,15 @@ class Navbar extends HTMLElement {
             hamburgerIcon.classList.toggle('opacity-0');
             navBar.classList.toggle('bg-white');
             sideBar.classList.toggle('left-[calc(-100%)]');
-
+            sideBarOpened = !sideBarOpened
             Array.from(icons).forEach(icon => {
-                if (!iconMustBlack) {
-                    if (!icon.classList.contains('must-fill-white')) {
-                        icon.classList.add('must-fill-white')
-                    } else icon.classList.remove('must-fill-white');
+                if (!scrolledDown && !icon.classList.contains('icon-must-black')) {
+                    icon.classList.add('icon-must-black');
+                    icon.classList.remove('must-fill-white');
+                }else if (scrolledDown && !icon.classList.contains('icon-must-black')) {
+                    icon.classList.remove('icon-must-black');
+                    icon.classList.add('must-fill-white');
                 }
-
-                if (icon.classList.contains('fill-white')) {
-                    icon.classList.toggle('fill-black')
-                    icon.classList.toggle('fill-white')
-                };
             });
         });
 
@@ -559,18 +570,39 @@ class Navbar extends HTMLElement {
                     icon.classList.remove('fill-black');
                     icon.classList.add('fill-white');
                     icon.classList.remove('must-fill-white');
+
                 });
             }else
             Array.from(icons).forEach(icon => {
                 icon.classList.remove('fill-black');
                 icon.classList.add('fill-white');
-                if (!iconMustBlack) {
-                    icon.classList.add('must-fill-white')
-                }
+                icon.classList.add('icon-must-black')
             });
         });
 
-
+        // change navbar theme when scroll down
+        window.addEventListener('scroll', () => {
+            if (!bgMustWhite || !textMustBlack || !iconMustBlack) {
+                if (window.scrollY > 0) {
+                    scrolledDown = true
+                    navBar.classList.add('text-must-black');
+                    navBar.classList.add('bg-must-white');
+                    Array.from(icons).forEach(icon => {
+                        icon.classList.add('icon-must-black');
+                        icon.classList.remove('must-fill-white');
+                    });
+                } else {
+                    scrolledDown = false
+                    navBar.classList.remove('text-must-black');
+                    navBar.classList.remove('bg-must-white');
+                    if (!sideBarOpened) {
+                        Array.from(icons).forEach(icon => {
+                            icon.classList.remove('icon-must-black');
+                        });
+                    }
+                }
+            }
+        });
     };
 };
 
