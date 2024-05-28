@@ -2531,6 +2531,10 @@ body {
     position: fixed;
   }
 
+  .tab\:absolute {
+    position: absolute;
+  }
+
   .tab\:relative {
     position: relative;
   }
@@ -2561,6 +2565,10 @@ body {
 
   .tab\:top-auto {
     top: auto;
+  }
+
+  .tab\:z-20 {
+    z-index: 20;
   }
 
   .tab\:order-2 {
