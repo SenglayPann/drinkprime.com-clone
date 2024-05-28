@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where to buy</title>
+    <link rel="stylesheet" href="/src/style/tailwindcss.css">
+    <script src="/src/script/map.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABeqA3pcqCJuU3TupXDB7WXt6OdSSKJqY&callback=initMap&libraries=&v=beta&language=en" defer></script>
+    <link rel="stylesheet" href="/src/style/where-to-buy.css">
+    <link rel="stylesheet" href="../src/style/navbar.css">
+    <script src="../component/navbar.js"></script>
+    <script src="/src/script/whereToBuy.js" defer></script>
+    <script src="/component/footer.js"></script>
+
+</head>
+<body>
+
+    <!-- Navbar  -->
+    <div class=" relative tab:z-20">
+        <nav-bar bgMustWhite="true" textMustBlack="true" iconMustBlack="true"  ></nav-bar>
+    </div>
+
+    <!-- Map -->
+    <div class="w-screen relative mt-[50px] tab:mt-[119px] des:mt-[72px] ">
+        <div class="h-[920px] max-[800px]:hidden w-full " id="map"></div>
+
+
+        <div class="flex w-screen justify-center tab:absolute tab:top-0">
+        
+            <div class=" flex tab:shadow-[0_1px_2px_rgba(0,_0,_0,_0.12),_0_1px_2px_rgba(0,_0,_0,_0.24)] flex-col w-fit min-[1130px]:w-[1100px] tab:flex-row font-roboto font-thin rounded-md   bg-pure-white tab:mx-[40px] mt-[50px] tracking-wider">
+                <div class="tab:pt-[165px] flex flex-col items-center rounded-md  text-center tab:bg-[#fcfafa] min-[1130px]:w-[40%] min-[800px]:w-[40%]"> 
+                    <div>
+                        <img src="https://cdn.destinilocators.com/templates/lite/search-icon-v1.svg" alt="">
+                    </div>
+                    <div class="my-[30px] mx-[15px] text-[20px] text-stroke-2">
+                        <h2>No Stores Found</h2>
+                    </div>
+                    <div class="  ">
+                        <div class="px-[5px] py-[10px] bg-pure-black text-pure-white  max-w-[195px] w-[195px] text-[14px] items-center text-stroke-1 tracking-widest hover:bg-pure-white hover:text-pure-black transition-colors duration-500">Search Again</div>
+                    </div>
+                    <div class="mt-[30px] text-[12px]">
+                        <p>Retailers, use our <span class="underline hover:text-red-800 cursor-pointer">Request Form <br></span>  to add your Store.</p>
+                    </div>
+                </div>
+    
+                <div class="p-[20px] tab:pt-[30px] tab:pl-[30px] tab:pr-[20px] tab:pb-[35px] text-[12px]   ">
+                    <div class="mb-[25px] flex justify-between ">
+                        <div class= >
+                            <h2 class="mb-[5px] text-[16px] text-stroke-1">Product Request Form</h2>
+                            <p>All fields are required</p>
+                        </div>
+                        <div class="max-[800px]:hidden">
+                            <svg width="20" height="20" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="1.22513" y1="11.8314" x2="11.7748" y2="1.16823" stroke="black"/>
+                                <line x1="11.8316" y1="11.7749" x2="1.16835" y2="1.2252" stroke="black"/>
+                                </svg> 
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col tab:flex-row font-normal">
+                        <div class="w-full tab:pr-[20px] ">
+                            <h3 class="mb-[15px]">Contact Info</h3>
+                            <h3 class="mb-[10px]">Full Name<span>*</span></h4>
+                            <div class="border w-full h-[35px] mb-[10px] bg-[#fcfafa]">
+                                <input type="text" class="w-full h-full text-[14px] pl-3 outline-gray-300 bg-[#fcfafa]">
+                            </div>
+                            <h3 class="mb-[10px]">Email<span>*</span></h4>
+                            <div class="border w-full h-[35px] mb-[10px] bg-[#fcfafa]">
+                                <input type="text" class="w-full h-full text-[14px] pl-3 outline-gray-300 bg-[#fcfafa]">
+                            </div>
+                            <div class="flex w-full justify-between mb-[10px] gap-[10px]">
+                                <div class="w-full">
+                                    <h3 class="mb-[10px]">City<span>*</span></h4>
+                                    <div class="border w-full h-[35px] bg-[#fcfafa]">
+                                        <input type="text" class="w-full h-full text-[14px] pl-3 outline-gray-300 bg-[#fcfafa]">
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <h3 class="mb-[10px]">State<span>*</span></h4>
+                                    <div class="border w-full h-[35px] bg-[#fcfafa]">
+                                        <input type="text" class="w-full h-full text-[14px] pl-3 outline-gray-300 bg-[#fcfafa]">
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="mb-[10px]">Postal Code<span>*</span></h4>
+                            <div class="border w-full h-[35px] mb-[10px] bg-[#fcfafa]">
+                                <input type="text" class="w-full h-full text-[14px] pl-3 outline-gray-300 bg-[#fcfafa]">
+                            </div>
+                            <h3 class="mb-[10px]">Country</h4>
+                            <div class="border w-full h-[35px] mb-[10px] bg-[#fcfafa]">
+                                <input type="text" class="w-full h-full text-[14px] pl-3 outline-gray-300 bg-[#fcfafa]">
+                            </div>
+                            <h3 class="mb-[10px]">Favorite Retailers</h4>
+                            <div class="border w-full h-[70px] mb-[10px] bg-[#fcfafa]">
+                                <input type="text" class="w-full h-full text-[14px] pl-3 outline-gray-300 bg-[#fcfafa]">
+                            </div>
+                            <h3 class="mb-[10px]">Comments</h4>
+                            <div class="border w-full h-[70px] bg-[#fcfafa]">
+                                <input type="text" class="w-full h-full text-[14px] text-justify pl-3 outline-gray-300 bg-[#fcfafa]">
+                            </div>
+                        </div>
+    
+                        <div class=" w-full">
+                            <h3 class="my-[15px]">Select Product You're Looking to find</h3>
+                            <div class="tab:h-[510px] tab:overflow-y-scroll mb-[10px] ">
+                                <h3 class="my-[15px]">Hydration</h3>
+                                <div class="">
+                                    <div>
+                                        <h4>Hydration - Strawberry Banana (US) 16.9oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - UFC 300 (US) 16.9oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4 >Hydration - Cherry Freeze (US) 16.9oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4 >Hydration - Glowberry (US) 16.9oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Lemonade (US) 16.9oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Strawberry Watermelon (US) 16.9oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - LA Dodgers (US) 16.9oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Ice Pop (US) 16.9oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Blue Raspberry (US) 16.9oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Lemon Lime (US) 16.9oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Meta Moon (US) 16.9oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Tropical Punch (US) 16.9oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Cherry Freeze (US) 16.9oz (8 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Meta Moon (US) 16.9oz (8 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4 >Hydration - Blue Raspberry (US) 16.9oz (8 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Ice Pop (US) 16.9oz (8 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Tropical Punch (US) 16.9oz (8 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Lemon Lime (US) 16.9oz (8 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Lemonade (US) 16.9oz (8 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4 >Hydration - Strawberry Watermelon (US) 16oz (8 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4 >Hydration - Variety Pack (Lemonade, Strawberry Watermelon, Blue Raspberry) (US) (15 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Variety Pack (Strawberry Banana, Lemonade) (US) (15 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Variety Pack (Lemonade, Strawberry Watermelon, Ice Pop) (US) (18 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Ice Pop (US) (15 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Strawberry Banana (US) (15 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration - Dodgers (US) 16oz (18 Pack)</h4>
+                                    </div>
+                                    <h3>Energy</h3>
+                                    <div>
+                                        <h4>Energy - Original (US) 12oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Energy - Strawberry Watermelon (US) 12oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Energy - Blue Raspberry (US) 12oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Energy - Lemon Lime (US) 12oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Energy - Ice Pop (US) 12oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Energy - Tropical Punch (US) 12oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Energy - Orange Mango (US) 12oz</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Energy - Original (US) 12oz (4 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Energy - Strawberry Watermelon (US) 12oz (4 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Energy - Blue Raspberry (US) 12oz (4 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Energy - Strawberry Watermelon (US) 12oz (12 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Energy - Tropical Punch (US) 12oz (12 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Energy - Original (US) 12oz (12 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Energy - Blue Raspberry (US) 12oz (12 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Energy - Lemon Lime (US) 12oz (12 Pack)</h4>
+                                    </div>
+                                    <h3>Hydration+ Sticks</h3>
+                                    <div>
+                                        <h4>Hydration+ Sticks - Strawberry Banana (6 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration+ Sticks - Glowberry (6 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration+ Sticks - Cherry Freeze Sticks Pack (6 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration+ Sticks - Strawberry Watermelon (6 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration+ Sticks - Meta Moon (6 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration+ Sticks - Lemonade (6 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration+ Sticks - Ice Pop (6 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration+ Sticks - Blue Raspberry (6 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration+ Sticks - Lemon Lime (6 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration+ Sticks - Tropical Punch (6 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration+ Sticks - Variety Pack (Blue Raspberry, Ice Pop, Strawberry Watermelon) (15 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration+ Sticks - Variety Pack (Ice Pop, Lemonade, Strawberry Watermelon) (20 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration+ Sticks - Variety Pack (Tropical Punch, Blue Raspberry, Lemon Lime) (20 Pack)</h4>
+                                    </div>
+                                    <div>
+                                        <h4>Hydration+ Sticks - Variety Pack  (Ice Pop, Blue Raspberry, Strawberry Watermelon) (30 Pack)</h4>
+                                    </div>
+                                    <h3>International</h3>
+                                    <div>
+                                        <h4>PRIME is available here</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-[5px] py-[10px] bg-pure-black text-pure-white  max-w-[100px] w-[100px] text-[14px] font-bold tracking-wider text-center hover:bg-pure-white hover:text-pure-black transition-colors duration-500">Submit</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <prime-footer></prime-footer>
+
+
+</body>
+</html>
+
+
+
