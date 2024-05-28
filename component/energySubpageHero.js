@@ -98,7 +98,7 @@ class EnergySubpageHero extends HTMLElement {
                 sliderIndex -= 1;
                 carousel.style.setProperty('transform', `translateX(calc(-100% * ${sliderIndex}))`);
             }else if (sliderIndex === 0) {
-                sliderIndex = 1;
+                sliderIndex = totalItems - 1;
                 carousel.style.setProperty('transform', `translateX(calc(-100% * ${sliderIndex}))`);
             }
 

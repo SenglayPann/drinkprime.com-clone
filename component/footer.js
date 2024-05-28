@@ -1,4 +1,5 @@
-const createFooterComponent = () => { 
+const createFooterComponent = (customPath) => { 
+
     return `
     <footer class="font-normalidadWide bg-black text-white">
     <div class="pt-[70px] pb-[85px] px-5 des:px-[118px]">
@@ -23,31 +24,31 @@ const createFooterComponent = () => {
 
             <div class="font-nunito flex-grow flex-shrink mx-3 px-[13px] pb-9 w-[45%] des:w-[calc(20%_-_24px)] text-sm">
                 <div class="mb-3">
-                    <a href="#" class="leading-7">ENERGY</a>
+                    <a href="${customPath}/energy.html" class="leading-7">ENERGY</a>
                 </div>
                 <div class="mb-3">
-                    <a href="#" class="leading-7">HYDRATION</a>
+                    <a href="${customPath}/hydration.html" class="leading-7">HYDRATION</a>
                 </div>
                 <div class="mb-3">
-                    <a href="#" class="leading-7">HYDRATION+ STICKS</a>
+                    <a href="${customPath}/hydration-sticks.html" class="leading-7">HYDRATION+ STICKS</a>
                 </div>
             </div>
 
             <div class="font-nunito flex-grow flex-shrink mx-3 px-[13px] pb-9 w-[45%] des:w-[calc(20%_-_24px)] text-sm">
                 <div class="mb-3">
-                    <a href="#" class="leading-7">ABOUT PRIME</a>
+                    <a href="${customPath}/about-prime.html" class="leading-7">ABOUT PRIME</a>
                 </div>
                 <div class="mb-3">
-                    <a href="#" class="leading-7">TEAM + ATHLETES</a>
+                    <a href="${customPath}/athlete.html" class="leading-7">TEAM + ATHLETES</a>
                 </div>
                 <div class="mb-3">
-                    <a href="#" class="leading-7">CREATORS</a>
+                    <a href="${customPath}/creator.html" class="leading-7">CREATORS</a>
                 </div>
                 <div class="mb-3">
-                    <a href="#" class="leading-7">ARTISTS</a>
+                    <a href="${customPath}/artist.html" class="leading-7">ARTISTS</a>
                 </div>
                 <div class="mb-3">
-                    <a href="#" class="leading-7">AMBASSADORS</a>
+                    <a href="${customPath}/ambassador.html" class="leading-7">AMBASSADORS</a>
                 </div>
                 <div class="mb-3">
                     <a href="#" class="leading-7">FAQ</a>
@@ -65,7 +66,7 @@ const createFooterComponent = () => {
                     <a href="#" class="leading-7">RETURN POLICY</a>
                 </div>
                 <div class="mb-3"> 
-                    <a href="#" class="leading-7">WHERE TO BUY</a>
+                    <a href="${customPath}/where-to-buy.html" class="leading-7">WHERE TO BUY</a>
                 </div>
                 <div class="mb-3">
                     <a href="#" class="leading-7">CONTACT US</a>
@@ -111,8 +112,10 @@ const createFooterComponent = () => {
 
 
 class footerComponent extends HTMLElement { 
+    
     connectedCallback() { 
-        this.innerHTML = createFooterComponent();
+        const customPath = this.getAttribute('customPath') || '.';
+        this.innerHTML = createFooterComponent(customPath);
     }
 };
 

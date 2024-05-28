@@ -155,7 +155,7 @@ class Navbar extends HTMLElement {
                                             </div>
             
                                             <div class="p-[20px]">
-                                                <a href="${customPath}/hydration-sticks-subpageaaaaww">
+                                                <a href="${customPath}/hydration-sticks-subpage">
                                                     <img src="${customPathImgPath}/assets/nav-drop-list/SB_Extended_Nav_Banner_Sticks_400x.png" alt="">
                                                 </a>
                                                 <div class="text-center mt-2">STRAWBERRY BANANA HYDRATION+ STICKS</div>
@@ -385,7 +385,7 @@ class Navbar extends HTMLElement {
                                             <li class="mb-[19px]">Strawberry watermelon</li>
                                         </a>
                                         <a href="${customPath}/energy-subpage.html">
-                                            <li class="mb-[19px]">Orang Mango</li>
+                                            <li class="mb-[19px]">Orange Mango</li>
                                         </a>
                                     </ul>
                                 </div>
