@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country-card-component</title>
+    <link rel="stylesheet" href="../src/style/tailwindcss.css">
+    <script src="../component/country-card-components.js" defer></script>
+    <script src="../component/footer.js" defer></script>
+    <script src="../component/navbar.js" defer></script>
+    <link rel="stylesheet" href="../src/style/navbar.css">
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav-bar bgMustWhite="true" textMustBlack="true" iconMustBlack="true" ></nav-bar>
+
+    <!-- body-content  -->
+        <div class="w-screen h-[1080px]">
+            <div class=" country-card country w-full h-full object-cover bg-[url('https://drinkprime.com/cdn/shop/files/BlankMap-World_gray_1.png?v=1710272070')] flex flex-col justify-center items-center">
+                <!-- overlay -->
+                <div class="object-cover "></div>
+                <div class="bg-white opacity-75 z-10 w-[68vw]">
+                    <p class="text-black my-[40px] text-center text-base tab:text-[20px] h-[24px] font-normalidadExteded font-medium">CHOOSE YOUR COUNTRY</p>
+                    
+                    <!-- country card part  -->
+                    <div class="grid grid-cols-2 grid-rows-14 mb:grid-cols-3 grid-rows-9 ">
+                        <country-card countryName="UNITED STATES" countryAbbreviation="USA" countryFlag="../assets/country-card/USA.webp"></country-card>
+                        <country-card countryName="UNITED KINGDOM" countryAbbreviation="GBR" countryFlag="../assets/country-card/United-kingom.webp"></country-card>
+                        <country-card countryName="CANADA" countryAbbreviation="USA" countryFlag="../assets/country-card/Canada.webp"></country-card>
+                        <country-card countryName="AUSTRALIA" countryAbbreviation="AUS" countryFlag="../assets/country-card/Australia.webp"></country-card>
+                        <country-card countryName="AUSTRIA" countryAbbreviation="AUT" countryFlag="../assets/country-card/Austria.webp"></country-card>
+                        <country-card countryName="CYPRUS" countryAbbreviation="CYP" countryFlag="../assets/country-card/Cyprus.webp"></country-card>
+                        <country-card countryName="DENMARK" countryAbbreviation="DNK" countryFlag="../assets/country-card/Denmark.webp"></country-card>
+                        <country-card countryName="FRANCE" countryAbbreviation="FRA" countryFlag="../assets/country-card/France.webp"></country-card>
+                        <country-card countryName="FINLAND" countryAbbreviation="FIN" countryFlag="../assets/country-card/Finland.webp"></country-card>
+                        <country-card countryName="GEORGIA" countryAbbreviation="GEO" countryFlag="../assets/country-card/Georgia.webp"></country-card>
+                        <country-card countryName="GERMANY" countryAbbreviation="DEU" countryFlag="../assets/country-card/Germany.webp"></country-card>
+                        <country-card countryName="GUAM" countryAbbreviation="GUM" countryFlag="../assets/country-card/Guam.webp"></country-card>
+                        <country-card countryName="IRELAND" countryAbbreviation="IRL" countryFlag="../assets/country-card/Ireland.webp"></country-card>
+                        <country-card countryName="ITALY" countryAbbreviation="ITA" countryFlag="../assets/country-card/Italy.webp"></country-card>
+                        <country-card countryName="MALTA" countryAbbreviation="MLT" countryFlag="../assets/country-card/Malta.webp"></country-card>
+                        <country-card countryName="MEXICO" countryAbbreviation="MEX" countryFlag="../assets/country-card/Mexico.webp"></country-card>
+                        <country-card countryName="NEW ZEALAND" countryAbbreviation="NZL" countryFlag="../assets/country-card/New Zealand.webp"></country-card>
+                        <country-card countryName="NORWAY" countryAbbreviation="NOR" countryFlag="../assets/country-card/Norway.webp"></country-card>
+                        <country-card countryName="PANAMA" countryAbbreviation="PA" countryFlag="../assets/country-card/Panama.webp"></country-card>
+                        <country-card countryName="POLAND" countryAbbreviation="POL" countryFlag="../assets/country-card/Poland.webp"></country-card>
+                        <country-card countryName="PUERTO RICO" countryAbbreviation="PRI" countryFlag="../assets/country-card/Puerto Rico.webp"></country-card>
+                        <country-card countryName="SOUTH AFRICA" countryAbbreviation="ZAF" countryFlag="../assets/country-card/South Africa .webp"></country-card>
+                        <country-card countryName="SPAIN" countryAbbreviation="ESP" countryFlag="../assets/country-card/Spain.webp"></country-card>
+                        <country-card countryName="SWEEDEN" countryAbbreviation="SWE" countryFlag="../assets/country-card/Sweeden.webp"></country-card>
+                        <country-card countryName="SWITZERLAND" countryAbbreviation="CHE" countryFlag="../assets/country-card/Switzerland.webp"></country-card>
+                        <country-card countryName="UAE" countryAbbreviation="UAE" countryFlag="../assets/country-card/UAE.webp"></country-card>
+                        <country-card countryName="TRINIDAD AND TOBAGO" countryAbbreviation="TTO" countryFlag="../assets/country-card/Trinidad and Tabago.webp"></country-card>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    
+    <!-- footer -->
+    <prime-footer></prime-footer>
+    
+</body>
+</html>
+

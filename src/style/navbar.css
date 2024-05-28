@@ -1,0 +1,103 @@
+.right-icon #us {
+    transition: all .45s ease-in-out;
+}
+.right-icon {
+    transition: all .45s ease;
+}
+
+#side-bar {
+    transition: left .42s ease-out;
+}
+
+
+#navbar-container:hover .right-icon {
+    fill: black;
+}
+
+#navbar-container .must-fill-white {
+    fill: white !important;
+}
+
+#navbar-container:hover #us {
+    border-color: black;
+}
+
+.hidden-ls {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.animate-border {
+    opacity: 0;
+}
+
+.sec-nav-ls:hover .animate-border {
+    width: 100%;
+    opacity: 1;
+}
+.sec-nav-ls:hover .hidden-ls {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.animate-border {
+    transition: width .2s ease-in-out ;
+}
+
+
+.opacity-0 {
+    opacity: 0;
+    transition: none;
+}
+
+.opacity-1 {
+    opacity: 1;
+    transition: opacity .45s ease-in-out;
+}
+
+.side-bar-ul>a>li {
+    padding: 7px 0;
+}
+
+.acc-arrow {
+    rotate: -180deg;
+    transition: transform .2s ease-in;
+}
+
+
+#search-bar, #search-bar-overlay {
+    transition: all .3s ease;
+}
+
+#inner-search-bar>input::placeholder {
+    font-size: 13px;
+    letter-spacing: .15rem;
+    color: black;
+    border: none;
+}
+#inner-search-bar>input {
+    letter-spacing: .15rem;
+    padding-left: 50px;
+    color: black;
+    text-transform: uppercase;
+}
+
+#inner-search-bar>input:focus {
+    outline: none;
+    
+}
+
+
+/* important classes */
+
+.bg-must-white {
+    background-color: white !important;
+}
+
+.icon-must-black {
+    fill: black !important;
+}
+
+.text-must-black {
+    color: black !important;
+}

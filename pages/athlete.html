@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athlete + Team</title>
+    <link rel="stylesheet" href="/src/style/tailwindcss.css">
+    <link rel="stylesheet" href="/src/style/navbar.css">
+    <script src="/component/navbar.js"defer></script>
+    <script src="/component/component-athletes-logo.js" defer></script>
+    <script src="/component/component-creator-cards.js"defer></script>
+    <script src="../component/footer.js" defer></script>
+</head>
+<body>
+    
+    <!-- NAV BAR : PRIME NAV SECTION -->
+    <nav-bar bgMustWhite="true" textMustBlack="true" iconMustBlack="true" ></nav-bar>
+
+    <!-- Image: prime image 360px  -->
+    <section id="creatorComponent">
+        <div class="image-container relative mx-auto w-full">
+            <div class="relative">
+                <img src="../assets/athlete+team/athlete-hero-banner-smaller.webp" alt="" class="w-full h-auto hidden" id="firstImage">
+                <img src="../assets/athlete+team/athlete-hero-banner.webp" alt="" class="hidden tab:w-full tab:h-auto" id="secondImage">
+                
+                <!-- Text Overlay for First Image -->
+                <div class="text-overlay absolute inset-10 flex-col items-center justify-center text-center text-white max-w-[calc(100%-20px)] top-[80%] hidden " id="firstTextOverlay">
+                    <p class="text-sm font-normalidadWide tracking-[4.33px]">TEAM + ATHLETES</p>
+                    <p class="text-2xl font-black font-normalidad pt-[10px] mb-[27px] tracking-[2.33px] text-stroke-1">MEET THE PRIME TEAM</p>
+                </div>
+
+                <!-- Text Overlay for Second Image -->
+                <div class="text-overlay hidden tab:flex absolute inset-10 p-[30px] flex-col items-start justify-start text-left text-white md:top-[60%] tab:top-[70%] des:top-[80%]" id="secondTextOverlay">
+                    <p class="text-sm font-normalidadWide tracking-[4.33px]">TEAM + ATHLETES</p>
+                    <p class="text-2xl font-black font-normalidad pt-[10px] mb-[27px] tracking-[2.33px] text-stroke-1">MEET THE PRIME TEAM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOGO SECTION ; ATHLETE LOGO SECTION -->
+    <section>
+        <div class="container mx-auto p-6 grid grid-cols-2 md:grid-cols-5 justify-items-center items-center" id="logoGridContainer"></div>
+    </section>
+
+    <!-- TEAM SECTION : TEAM + ATHLETES  -->
+    <section>
+        <!-- BIG GRID : BIGGER GRIDDED SECTION -->
+        <div class="tab1:grid tab1:grid-cols-2">
+            <div class="relative">
+                <img src="../assets/athlete+team/patrick-mahomes.webp" alt="creator image" class="object-cover w-full h-[450px]">
+                <div class="text-left tab1:text-black p-[15px] mb-[20px] tab1:absolute tab1:bottom-0 tab1:left-0 tab1:w-full text-stroke-1">
+                   <h3 class="font-normalidadExteded tab1:text-white tab1:drop-shadow-[2px_2px_4px_black] font-extrabold text-lg mb-[5px] tracking-[0.2em]">PATRICK MAHOMES</h3>
+                   <h3 class="font-normalidadExteded tab1:text-white tab1:drop-shadow-[2px_2px_4px_black] text-base  tracking-[1.47px]">FOOTBALL</h3>
+                   <p class="font-normalidadExteded mt-[12px] mb-[10px] text-sm tab1:text-xs underline tab1:no-underline underline-offset-3 tab1:border-[1px] tab1:border-black tab1:bg-white tab1:mt-[16px] tab1:px-[12px] tab1:py-[10px] w-[140px] tracking-[1.5px]">LEARN MORE</p>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="../assets/athlete+team/erling-haaland.webp" alt="creator image" class="object-cover w-full h-[450px]">
+                <div class="text-left tab1:text-black p-[15px] mb-[20px] tab1:absolute tab1:bottom-0 tab1:left-0 tab1:w-full text-stroke-1">
+                   <h3 class="font-normalidadExteded tab1:text-white tab1:drop-shadow-[2px_2px_4px_black] font-extrabold text-lg mb-[5px] tracking-[0.2em]">ERLING HAALAND</h3>
+                   <h3 class="font-normalidadExteded tab1:text-white tab1:drop-shadow-[2px_2px_4px_black] text-base  tracking-[1.47px]">SOCCER</h3>
+                   <p class="font-normalidadExteded mt-[12px] mb-[10px] text-sm tab1:text-xs underline tab1:no-underline underline-offset-3 tab1:border-[1px] tab1:border-black tab1:bg-white tab1:mt-[16px] tab1:px-[12px] tab1:py-[10px] w-[140px] tracking-[1.5px]">LEARN MORE</p>
+                </div>
+            </div>
+        </div>
+        <!-- SMALL GRID : SMALLER GRIDDED SECTION -->
+        <div>
+            <div class="grid grid-cols-1 tab1:grid-cols-3" id="creatorGrid" logoList='[
+                { 
+                    "imgSrc": "../assets/athlete+team/alisha-lehman.webp",
+                    "name": "ALISHA LEHMANN",
+                    "location": "SOCCER"
+                },
+                { 
+                    "imgSrc": "../assets/athlete+team/cody-rhodes.webp",
+                    "name": "CODY RHODES",
+                    "location": "WWE"
+                },
+                { 
+                    "imgSrc": "../assets/athlete+team/auston-matthews.webp",
+                    "name": "AUSTON MATTHEWS",
+                    "location": "HOCKEY"
+                },
+                { 
+                    "imgSrc": "../assets/athlete+team/aaron-judge.webp",
+                    "name": "AARON JUDGE",
+                    "location": "BASEBALL"
+                },
+                { 
+                    "imgSrc": "../assets/athlete+team/rafael-leao.webp",
+                    "name": "RAFAEL LEÃO",
+                    "location": "SOCCER"
+                },
+                { 
+                    "imgSrc": "../assets/athlete+team/bud-crawford.webp",
+                    "name": "BUD CRAWFORD",
+                    "location": "BOXING"
+                },
+                { 
+                    "imgSrc": "../assets/athlete+team/shakur-stevenson.webp",
+                    "name": "SHAKUR STEVENSON",
+                    "location": "BOXING"
+                },
+                { 
+                    "imgSrc": "../assets/athlete+team/kyle-larson.webp",
+                    "name": "KYLE LARSON",
+                    "location": "NASCAR"
+                },
+                { 
+                    "imgSrc": "../assets/athlete+team/devin-haney.webp",
+                    "name": "DEVIN HANEY",
+                    "location": "BOXING"
+                },
+                { 
+                    "imgSrc": "../assets/athlete+team/dricus-du-plessis.webp",
+                    "name": "DRICUS DU PLESSIS",
+                    "location": "MMA"
+                },
+                { 
+                    "imgSrc": "../assets/athlete+team/alexabder.webp",
+                    "name": "ALEXANDER VOLKANOVSKI",
+                    "location": "MMA"
+                },
+                { 
+                    "imgSrc": "../assets/athlete+team/israel-adesanya.webp",
+                    "name": "ISRAEL ADESANYA",
+                    "location": "MMA"
+                }
+                ]'>
+            </div>
+        </div>
+        <!-- BIG GRID : BIGGER GRIDDED SECTION -->
+        <div class="tab1:grid tab1:grid-cols-2">
+            <div class="relative">
+                <img src="../assets/athlete+team/tyreek-hill.webp" alt="creator image" class="object-cover w-full h-[450px]">
+                <div class="text-left tab1:text-black p-[15px] mb-[20px] tab1:absolute tab1:bottom-0 tab1:left-0 tab1:w-full text-stroke-1">
+                   <h3 class="font-normalidadExteded tab1:text-white tab1:drop-shadow-[2px_2px_4px_black] font-extrabold text-lg mb-[5px] tracking-[0.2em]">TYREEK HILL</h3>
+                   <h3 class="font-normalidadExteded tab1:text-white tab1:drop-shadow-[2px_2px_4px_black] text-base  tracking-[1.47px]">FOOTBALL</h3>
+                   <p class="font-normalidadExteded mt-[12px] mb-[10px] text-sm tab1:text-xs underline tab1:no-underline underline-offset-3 tab1:border-[1px] tab1:border-black tab1:bg-white tab1:mt-[16px] tab1:px-[12px] tab1:py-[10px] w-[140px] tracking-[1.5px]">LEARN MORE</p>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="../assets/athlete+team/max-park.webp" alt="creator image" class="object-cover w-full h-[450px]">
+                <div class="text-left tab1:text-black p-[15px] mb-[20px] tab1:absolute tab1:bottom-0 tab1:left-0 tab1:w-full text-stroke-1">
+                   <h3 class="font-normalidadExteded tab1:text-white tab1:drop-shadow-[2px_2px_4px_black] font-extrabold text-lg mb-[5px] tracking-[0.2em]">MAX PARK</h3>
+                   <h3 class="font-normalidadExteded tab1:text-white tab1:drop-shadow-[2px_2px_4px_black] text-base  tracking-[1.47px]">RUBIK'S CUBE</h3>
+                   <p class="font-normalidadExteded mt-[12px] mb-[10px] text-sm tab1:text-xs underline tab1:no-underline underline-offset-3 tab1:border-[1px] tab1:border-black tab1:bg-white tab1:mt-[16px] tab1:px-[12px] tab1:py-[10px] w-[140px] tracking-[1.5px]">LEARN MORE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER SECTION : PRIME FOOTER -->
+    <prime-footer></prime-footer>
+
+</body>
+</html>

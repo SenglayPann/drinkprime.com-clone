@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator</title>
+    <link rel="stylesheet" href="../src/style/tailwindcss.css">
+    <script src="../component/component-creator-cards.js" defer></script>
+</head>
+<body>
+
+     <!-- Image: prime image 360px  -->
+     <section id="creatorComponent">
+        <div class="image-container relative mx-auto w-full">
+            <div class="relative">
+                <img src="../assets/index/component-creator-cards/logo-prime360px.webp" alt="" class="w-full h-auto hidden" id="firstImage">
+                <img src="../assets/index/component-creator-cards/tab-prime-logo.webp" alt="" class="hidden tab:w-full tab:h-auto" id="secondImage">
+                
+                <!-- Text Overlay for First Image -->
+                <div class="text-overlay absolute inset-10 flex-col items-center justify-center text-center text-white max-w-[calc(100%-20px)] top-[80%] hidden " id="firstTextOverlay">
+                    <p class="text-sm font-normalidadWide tracking-[4.33px]">NEXT-LEVEL TALENT</p>
+                    <p class="text-2xl font-black font-normalidad pt-[10px] mb-[27px] tracking-[2.33px] text-stroke-1">MEET PRIME CREATORS</p>
+                </div>
+    
+                <!-- Text Overlay for Second Image -->
+                <div class="text-overlay hidden tab:flex absolute inset-10 p-[30px] flex-col items-start justify-start text-left text-white md:top-[60%] tab:top-[70%] des:top-[80%]" id="secondTextOverlay">
+                    <p class="text-sm font-normalidadWide tracking-[4.33px]">NEXT-LEVEL TALENT</p>
+                    <p class="text-2xl font-black font-normalidad pt-[10px] mb-[27px] tracking-[2.33px] text-stroke-1">MEET PRIME CREATORS</p>
+                </div>
+            </div>
+        </div>
+
+       <!-- Creator Images Grid -->
+       <div class="grid grid-cols-1 tab1:grid-cols-3" id="creatorGrid" logoList='[
+       { 
+           "imgSrc": "../assets/index/component-creator-cards/Speed.webp",
+           "name": "SPEED",
+           "location": "U.S."
+       },
+       { 
+           "imgSrc": "../assets/index/component-creator-cards/samy-rivera.webp",
+           "name": "SAMY RIVERA",
+           "location": "MEXICO"
+       },
+       { 
+           "imgSrc": "../assets/index/component-creator-cards/mercedes.webp",
+           "name": "MERCEDES ROA",
+           "location": "MEXICO"
+       },
+       { 
+           "imgSrc": "../assets/index/component-creator-cards/amine.webp",
+           "name": "AMINE",
+           "location": "FRANCE"
+       },
+       { 
+           "imgSrc": "../assets/index/component-creator-cards/fede.webp",
+           "name": "FEDE",
+           "location": "MEXICO"
+       },
+       { 
+           "imgSrc": "../assets/index/component-creator-cards/ibai.webp",
+           "name": "IBAI",
+           "location": "SPAIN"
+       }
+   ]'></div>
+
+    </section>
+
+</body>
+</html>
