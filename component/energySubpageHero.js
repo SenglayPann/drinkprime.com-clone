@@ -16,11 +16,11 @@ class EnergySubpageHero extends HTMLElement {
         const image1 = this.getAttribute("imagefront");
         const image2 = this.getAttribute("imageside");
         const image3 = this.getAttribute("imageback");
-        this.setAttribute('class', 'w-full flex justify-center -z')
+        this.setAttribute('class', 'w-full flex justify-center')
 
         this.innerHTML = ` 
-            <div class="container flex flex-col items-center justify-center w-[1200px] tab:flex-row tab:items-start overflow-hidden">
-                <div class="relative flex w-full  tab:w-[50%] h-full">-
+            <div class="container flex flex-col items-center justify-center w-[1200px] tab:flex-row tab:items-start overflow-hidden tab:overflow-visible">
+                <div class="relative flex w-full  tab:w-[50%] h-full">
                     <div id="slide-left" class="absolute z-10 left-[15px] flex justify-center items-center rotate-180 top-[calc(50%_-_25px)]  w-[50px] h-[50px] tab:hidden rounded-full">
                         <svg class="w-[75%]" viewBox="0 0 100 100"><path d="M95,48H9.83L41,16.86A2,2,0,0,0,38.14,14L3.59,48.58a1.79,1.79,0,0,0-.25.31,1.19,1.19,0,0,0-.09.15l-.1.2-.06.2a.84.84,0,0,0,0,.17,2,2,0,0,0,0,.78.84.84,0,0,0,0,.17l.06.2.1.2a1.19,1.19,0,0,0,.09.15,1.79,1.79,0,0,0,.25.31L38.14,86A2,2,0,0,0,41,86a2,2,0,0,0,0-2.83L9.83,52H95a2,2,0,0,0,0-4Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg>
                     </div>
@@ -37,8 +37,8 @@ class EnergySubpageHero extends HTMLElement {
                 </div>
                 
 
-                <div class=" w-[50%] h-full">
-                    <div class="flex flex-col items-center gap-5 pt-5 sticky tab:top-[119px] des:top-[72px]">
+                
+                    <div class="flex flex-col items-center gap-5 pt-5 sticky tab:items-start tab:top-[119px] des:top-[72px]">
                         <div class="w-full flex flex-col gap-2 items-center tab:items-start">
                             <h3 class="text-lg font-normalidadExteded text-stroke-2">${title}</h3>
                             <h5 class=" text-xs font-normalidadExteded text-stroke-1">${brand}</h5>
@@ -69,7 +69,7 @@ class EnergySubpageHero extends HTMLElement {
                             </ul>
                         </div>
                     </div>
-                </div>
+                
             </div>
 
         `;
