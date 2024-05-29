@@ -1003,10 +1003,6 @@ video {
   height: 1080px;
 }
 
-.h-\[200vh\] {
-  height: 200vh;
-}
-
 .h-\[205px\] {
   height: 205px;
 }
@@ -1101,10 +1097,6 @@ video {
 
 .max-h-\[52px\] {
   max-height: 52px;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .w-0 {
@@ -1593,11 +1585,6 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -1608,11 +1595,6 @@ video {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
-.bg-green-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
-}
-
 .bg-pure-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1621,11 +1603,6 @@ video {
 .bg-pure-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -2767,6 +2744,10 @@ body {
 
   .tab\:gap-\[40px\] {
     gap: 40px;
+  }
+
+  .tab\:overflow-visible {
+    overflow: visible;
   }
 
   .tab\:overflow-x-hidden {
