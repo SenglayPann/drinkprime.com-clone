@@ -1,0 +1,101 @@
+{
+    "products":[
+        {
+        "productName": "UFC 300",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/1.webp"
+        },
+        {
+        "productName": "LA DODGERS",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/2.webp"
+        },
+        {
+        "productName": "STRAWBERRY BANANA",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/3.webp"
+        },
+        {
+        "productName": "CHERRY FREEZE",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/4.webp"
+        },
+        {
+        "productName": "CHERRY FREEZE",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/5.webp"
+        },
+        {
+        "productName": "LEMONADE",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/6.webp"
+        },
+        {
+        "productName": "GLOWBERRY ULTRA RARE",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/7.webp"
+        },
+        {
+        "productName": "GLOWBERRY RARE",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/8.webp"
+        },
+        {
+        "productName": "GLOWBERRY",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/9.webp"
+        },
+        {
+        "productName": "META MOON",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/10.webp"
+        },
+        {
+        "productName": "STRAWBERRY WATERMELON",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/11.webp"
+        },
+        {
+        "productName": "ICE POP",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/12.webp"
+        },
+        {
+        "productName": "BLUE RASPBERRY",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/13.webp"
+        },
+        {
+        "productName": "LEMON LIME",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/14.webp"
+        },
+        {
+        "productName": "TROPICAL PUNCH",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/15.webp"
+        },
+        {
+        "productName": "ORANGE",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/16.webp"
+        },
+        {
+        "productName": "GRAPE",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/17.webp"
+        },
+        {
+        "productName": "ORIGINAL",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/18.webp"
+        },
+        {
+        "productName": "ORANGE MANGO",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/19.webp"
+        },
+        {
+        "productName": "STRAWBERRY WATERMELON",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/20.webp"
+        },
+        {
+        "productName": "ICE POP",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/21.webp"
+        },
+        {
+        "productName": "BLUE RASPBERRY",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/22.webp"
+        },
+        {
+        "productName": "TROPICAL PUNCH",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/23.webp"
+        },
+        {
+        "productName": "LEMON LIME",
+        "imgSrc": "../assets/verify-your-prime-subpage-product/24.webp"
+        }
+    ]
+
+}
