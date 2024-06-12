@@ -1,0 +1,49 @@
+{
+    "productTitle": "ENERGY",
+    "products": [
+        {
+            "productImgUrl": "assets/homepage/meta-moon-can.webp",
+            "productTitle": "ORIGINAL",
+            "productSize": "12PK",
+            "productPrice": "$29.99",
+            "buttonBgColor": "white",
+            "buttonTitle": "FIND IN STORE"
+        },
+        {
+            "productImgUrl": "assets/homepage/ice-pop-can.webp",
+            "productTitle": "ICE POP",
+            "productSize": "12PK",
+            "productPrice": "$29.99",
+            "buttonBgColor": "white",
+            "buttonTitle": "FIND IN STORE"
+        },
+        {
+            "productImgUrl": "assets/homepage/strawberry-watermelon-can.webp",
+            "productTitle": "STRAWBERRY WATERMELON",
+            "productSize": "12PK",
+            "productPrice": "$29.99",
+            "buttonBgColor": "white",
+            "buttonTitle": "FIND IN STORE"
+        },
+        {
+            "productImgUrl": "assets/homepage/blueraspberry-can.webp",
+            "productTitle": "BLUE RASPBERRY",
+            "productSize": "12PK",
+            "productPrice": "$29.99",
+            "buttonBgColor": "white",
+            "buttonTitle": "FIND IN STORE"
+        },
+        {
+            "productImgUrl": "assets/homepage/tropical-punch-can.webp",
+            "productTitle": "TROPICAL PUNCH",
+            "productSize": "12PK",
+            "productPrice": "$29.99",
+            "buttonBgColor": "white",
+            "buttonTitle": "FIND IN STORE"
+        }
+    ],
+    "productCollection": {
+        "productCollectionImg": "assets/homepage/group-can.webp",
+        "PRLogoImg": "assets/homepage/PR-logo02.webp"
+    }
+}
