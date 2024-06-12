@@ -6,9 +6,9 @@
     <title>Creator</title>
     <link rel="stylesheet" href="../src/style/tailwindcss.css">
     <link rel="stylesheet" href="../src/style/navbar.css">
-    <script src="../component/navbar.js"></script>
-    <script src="../component/componentCreatorCards.js"></script>
-    <script src="../component/footer.js"></script>
+    <script src="../component/navbar.js" defer></script>
+    <script src="../component/componentCreatorCards.js" defer></script>
+    <script src="../component/footer.js" defer></script>
 </head>
 <body>
     
@@ -25,7 +25,7 @@
             <!-- Text Overlay for First Image -->
             <div class="text-overlay absolute inset-10 flex-col items-center justify-center text-center text-white max-w-[calc(100%-20px)] top-[80%] hidden " id="firstTextOverlay">
                 <p class="text-sm font-normalidadWide tracking-[4.33px]">NEXT-LEVEL TALENT</p>
-                <p class="text-2xl font-black font-normalidad pt-[10px] mb-[27px] tracking-[2.33px] text-stroke-1">MEET PRIME CREATORS</p>
+                <p class="text-2xl font-black font-normalidad pt-[10px] mb-[27px] trachttp://127.0.0.1:5500/assets/index/component-creator-cards/tab-prime-logo.webpking-[2.33px] text-stroke-1">MEET PRIME CREATORS</p>
             </div>
 
             <!-- Text Overlay for Second Image -->
@@ -37,38 +37,8 @@
     </div>
 
     <!-- Creator Images Grid -->
-    <div class="grid grid-cols-1 tab1:grid-cols-3" id="creatorGrid" logoList='[
-        { 
-            "imgSrc": "../assets/index/component-creator-cards/Speed.webp",
-            "name": "SPEED",
-            "location": "U.S."
-        },
-        { 
-            "imgSrc": "../assets/index/component-creator-cards/samy-rivera.webp",
-            "name": "SAMY RIVERA",
-            "location": "MEXICO"
-        },
-        { 
-            "imgSrc": "../assets/index/component-creator-cards/mercedes.webp",
-            "name": "MERCEDES ROA",
-            "location": "MEXICO"
-        },
-        { 
-            "imgSrc": "../assets/index/component-creator-cards/amine.webp",
-            "name": "AMINE",
-            "location": "FRANCE"
-        },
-        { 
-            "imgSrc": "../assets/index/component-creator-cards/fede.webp",
-            "name": "FEDE",
-            "location": "MEXICO"
-        },
-        { 
-            "imgSrc": "../assets/index/component-creator-cards/ibai.webp",
-            "name": "IBAI",
-            "location": "SPAIN"
-        }
-    ]'></div>
+    
+    <div class="grid grid-cols-1 tab1:grid-cols-3" id="creatorGrid" json-data="../data/creator.json"></div>
     </section>
 
     <!-- Footer: Creator footer -->

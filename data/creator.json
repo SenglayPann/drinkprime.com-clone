@@ -1,0 +1,34 @@
+{
+    "creators": [
+        { 
+            "imgSrc": "../assets/index/component-creator-cards/Speed.webp",
+            "name": "SPEED",
+            "location": "U.S."
+        },
+        { 
+            "imgSrc": "../assets/index/component-creator-cards/samy-rivera.webp",
+            "name": "SAMY RIVERA",
+            "location": "MEXICO"
+        },
+        { 
+            "imgSrc": "../assets/index/component-creator-cards/mercedes.webp",
+            "name": "MERCEDES ROA",
+            "location": "MEXICO"
+        },
+        { 
+            "imgSrc": "../assets/index/component-creator-cards/amine.webp",
+            "name": "AMINE",
+            "location": "FRANCE"
+        },
+        { 
+            "imgSrc": "../assets/index/component-creator-cards/fede.webp",
+            "name": "FEDE",
+            "location": "MEXICO"
+        },
+        { 
+            "imgSrc": "../assets/index/component-creator-cards/ibai.webp",
+            "name": "IBAI",
+            "location": "SPAIN"
+        }
+    ]
+}
