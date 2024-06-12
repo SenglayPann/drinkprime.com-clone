@@ -1,0 +1,57 @@
+{
+    "productTitle": "HYDRATION+",
+    "products": [
+        {
+            "productImgUrl": "assets/homepage/strawberry-banana-stick.webp",
+            "productTitle": "STRAWBERRY BANANA",
+            "productSize": "6PK",
+            "productPrice": "$13.99",
+            "buttonBgColor": "white",
+            "buttonTitle": "FIND IN STORE"
+        },
+        {
+            "productImgUrl": "assets/homepage/cherry-freeze-stick.webp",
+            "productTitle": "CHERRY FREEEZE",
+            "productSize": "6PK",
+            "productPrice": "$13.99",
+            "buttonBgColor": "",
+            "buttonTitle": ""
+        },
+        {
+            "productImgUrl": "assets/homepage/lemonade-stick.webp",
+            "productTitle": "LEMONADE",
+            "productSize": "6PK",
+            "productPrice": "$13.99",
+            "buttonBgColor": "",
+            "buttonTitle": ""
+        },
+        {
+            "productImgUrl": "assets/homepage/watermelon-strawberry-stick.webp",
+            "productTitle": "STRAWBERRY WATERMELON",
+            "productSize": "6PK",
+            "productPrice": "$13.99",
+            "buttonBgColor": "",
+            "buttonTitle": ""
+        },
+        {
+            "productImgUrl": "assets/homepage/icepop-stick.webp",
+            "productTitle": "ICE POP",
+            "productSize": "6PK",
+            "productPrice": "$13.99",
+            "buttonBgColor": "",
+            "buttonTitle": ""
+        },
+        {
+            "productImgUrl": "assets/homepage/meta-moon-stick.webp",
+            "productTitle": "META MOON",
+            "productSize": "6PK",
+            "productPrice": "$13.99",
+            "buttonBgColor": "white",
+            "buttonTitle": "FIND IN STORE"
+        }
+    ],
+    "productCollection": {
+        "productCollectionImg": "/assets/homepage/sb-stick-group.webp",
+        "PRLogoImg": "/assets/homepage/PR-logo-01.webp"
+    }
+}

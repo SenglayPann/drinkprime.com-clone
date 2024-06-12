@@ -1,0 +1,57 @@
+{
+  "productTitle": "HYDRATION",
+  "products": [
+      {
+          "productImgUrl": "assets/homepage/strawberry-banana.webp",
+          "productTitle": "STRAWBERRY BANANA",
+          "productSize": "12PK",
+          "productPrice": "$29.99",
+          "buttonBgColor": "",
+          "buttonTitle": ""
+      },
+      {
+          "productImgUrl": "assets/homepage/cherry-freeze.webp",
+          "productTitle": "CHERRY FREEZE",
+          "productSize": "12PK",
+          "productPrice": "$29.99",
+          "buttonBgColor": "white",
+          "buttonTitle": "FIND IN STORE"
+      },
+      {
+          "productImgUrl": "assets/homepage/lemonade.webp",
+          "productTitle": "LEMONADE",
+          "productSize": "12PK",
+          "productPrice": "$29.99",
+          "buttonBgColor": "",
+          "buttonTitle": ""
+      },
+      {
+          "productImgUrl": "assets/homepage/strawberry-watermelon.webp",
+          "productTitle": "STRAWBERRY WATERMELON",
+          "productSize": "12PK",
+          "productPrice": "$29.99",
+          "buttonBgColor": "",
+          "buttonTitle": ""
+      },
+      {
+          "productImgUrl": "assets/homepage/meta-moon.webp",
+          "productTitle": "META MOON",
+          "productSize": "12PK",
+          "productPrice": "$29.99",
+          "buttonBgColor": "",
+          "buttonTitle": ""
+      },
+      {
+          "productImgUrl": "assets/homepage/ice-pop.webp",
+          "productTitle": "ICE POP",
+          "productSize": "12PK",
+          "productPrice": "$29.99",
+          "buttonBgColor": "",
+          "buttonTitle": ""
+      }
+  ],
+  "productCollection": {
+      "productCollectionImg": "/assets/homepage/Hydration-group.webp",
+      "PRLogoImg": "/assets/homepage/PR-logo-01.webp"
+  }
+}
