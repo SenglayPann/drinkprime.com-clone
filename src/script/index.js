@@ -1,6 +1,5 @@
 const slidingButton = document.getElementById('btn-bg');
-const btnContainer = document.getElementById('btn-container');
-console.log(btnContainer);
+const btnContainer = document.getElementById('btn-container')
 
 btnContainer.addEventListener('mouseleave', () => {
     console.log(1);
