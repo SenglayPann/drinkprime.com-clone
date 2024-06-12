@@ -202,3 +202,19 @@ Merge Request :
 - **Merge:** when merging your branch into a parent branch.
 
 **e.g : Merge: merging into the release branch with the bugfix/homepage branch**
+
+## IA:
+
+[Link Text](https://www.figma.com/board/z5yvGKIMsEWNGvAyxgNHvG/drinkprime.com-IA?node-id=0-1&t=9WystjTSPfzj00Pv-1)
+
+## Figma:
+
+[Link Text](https://www.figma.com/design/tGUymEDflpKO1hrgfWgzl9/Drinkprime.com?node-id=0-1&t=E6yr98S6gX68bzpE-1)
+
+## Convention Guide:
+
+[Link Text](https://www.canva.com/design/DAGE_7cFT-Y/9lIcsIVRc_c0-Gh4VIxgHQ/edit?utm_content=DAGE_7cFT-Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+## Website:
+
+[Link Text](https://drinkprime-com.vercel.app/)

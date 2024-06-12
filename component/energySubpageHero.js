@@ -80,7 +80,6 @@ class EnergySubpageHero extends HTMLElement {
         const rightHandle = document.getElementById('slide-right');
         const carousel = document.getElementById('carousel');
         const totalItems = document.querySelectorAll('#carousel img').length;
-        console.log(leftHandle)
 
 
         rightHandle.addEventListener('click', () => {
