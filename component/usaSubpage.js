@@ -1,11 +1,11 @@
-class ProductCard extends HTMLElement {
+class usaProduct extends HTMLElement {
     constructor() {
         super();
     }
 
     connectedCallback() {
-        const productName = this.getAttribute('productName');
-        const imgSrc = this.getAttribute('imgSrc');
+        const productName = this.getAttribute('product-name');
+        const imgSrc = this.getAttribute('product-url');
 
         this.innerHTML = `
             <div class="text-center p-8 box-border ">
@@ -16,4 +16,4 @@ class ProductCard extends HTMLElement {
     }
 }
 
-customElements.define('product-card', ProductCard);
+customElements.define('usa-product', usaProduct);

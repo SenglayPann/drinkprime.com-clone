@@ -4,9 +4,9 @@ class productCardList extends HTMLElement {
         super();
     }           
     connectedCallback() {
-        const productTitle = this.getAttribute('product-title')
+       const productTitle = this.getAttribute('product-title')
         const jsonFilePath = this.getAttribute('data-json')
-
+ 
         // Fetch data from json file 
         fetch(jsonFilePath) 
             .then(response => response.json())
