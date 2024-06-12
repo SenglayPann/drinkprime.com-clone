@@ -6,9 +6,9 @@
     <title>Artist</title>
     <link rel="stylesheet" href="../src/style/tailwindcss.css">
     <link rel="stylesheet" href="../src/style/navbar.css">
-    <script src="../component/navbar.js"></script>
-    <script src="../component/componentCreatorCards.js"></script>
-    <script src="../component/footer.js"></script>
+    <script src="../component/navbar.js" defer></script>
+    <script src="../component/componentCreatorCards.js" defer></script>
+    <script src="../component/footer.js" defer></script>
 </head>
 <body>
     
@@ -37,23 +37,7 @@
         </div>
     
         <!-- Creator Images Grid -->
-        <div class="grid grid-cols-1 tab1:grid-cols-3" id="creatorGrid" logoList='[
-            { 
-                "imgSrc": "../assets/artist/central cee.webp",
-                "name": "CENTRAL CEE",
-                "location": "ARTIST"
-            },
-            { 
-                "imgSrc": "../assets/artist/yellow-guy.webp",
-                "name": "SFERA EBBASTA",
-                "location": "ARTIST"
-            },
-            { 
-                "imgSrc": "../assets/artist/pluma.webp",
-                "name": "PESO PLUMA",
-                "location": "ARTIST"
-            }
-        ]'></div>
+        <div class="grid grid-cols-1 tab1:grid-cols-3" id="creatorGrid" json-data="../data/artist.json"></div>
         </section>
     
         <!-- Footer: Creator footer -->

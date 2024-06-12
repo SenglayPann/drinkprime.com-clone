@@ -1,0 +1,19 @@
+{
+    "creators": [
+        { 
+            "imgSrc": "../assets/artist/central cee.webp",
+            "name": "CENTRAL CEE",
+            "location": "ARTIST"
+        },
+        { 
+            "imgSrc": "../assets/artist/yellow-guy.webp",
+            "name": "SFERA EBBASTA",
+            "location": "ARTIST"
+        },
+        { 
+            "imgSrc": "../assets/artist/pluma.webp",
+            "name": "PESO PLUMA",
+            "location": "ARTIST"
+        }
+    ]
+}
