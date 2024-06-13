@@ -9,34 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const creators = data.creators;
         console.log(creators)
         // Update image and text overlays based on breakpoints
-        function updateComponents() {
-            const firstImage = document.getElementById("firstImage");
-            const secondImage = document.getElementById("secondImage");
-            const firstTextOverlay = document.getElementById("firstTextOverlay");
-            const secondTextOverlay = document.getElementById("secondTextOverlay");
-    
-            if (window.innerWidth >= 768) {
-    
-                // Hide first image and text overlay
-                firstImage.classList.add("hidden");
-                firstTextOverlay.classList.add("hidden");
-    
-                // Show second image and text overlay
-                secondImage.classList.remove("hidden");
-                secondTextOverlay.classList.remove("hidden");
-    
-            } else {
-                
-                // Show first image and text overlay
-                firstImage.classList.remove("hidden");
-                firstTextOverlay.classList.remove("hidden");
-    
-                // Hide second image and text overlay
-                secondImage.classList.add("hidden");
-                secondTextOverlay.classList.add("hidden");
-            }
-        }
-    
         // Render creator cards
         function renderCreators() {
             
@@ -57,9 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
         // Initialize component
         function initComponent() {
-            updateComponents();
             renderCreators();
-            window.addEventListener("resize", updateComponents);
         }
     
         // Call initComponent on DOMContentLoaded
