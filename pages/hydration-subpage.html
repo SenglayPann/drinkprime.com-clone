@@ -10,6 +10,8 @@
     <script defer src="../src/script/hydrationSubpage.js"></script>
     <link rel="stylesheet" href="../src/style/tailwindcss.css">
     <link rel="stylesheet" href="../src/style/navbar.css">
+    <script src="../component/energySubpageCard.js" defer></script>
+    <script src="../component/subpageDrinkProductGenerator.js" defer></script>
 </head>
 <body class="mt-[50px] tab:mt-[119px] des:mt-[72px]">
 
@@ -108,45 +110,9 @@
         </div>
     </section>
 
-    <!-- title-bottles-mobile -->
-    <div class="tab:hidden block mt-[100px]">
-        <h3 class="text-[28px] text-center text-stroke-2 font-normalidadWide">YOU MAY ALSO LIKE</h3>
-        <div class="grid grid-cols-2 gap-[10px] mt-[20px]">
-            <product-card product-img-url="../assets/index/product-bottles/STRAWBERRY WATERMELON.webp" product-title="STRAWBERRY WATERMELON" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            <product-card product-img-url="../assets/index/product-bottles/LEMONADE.webp" product-title="LEMONADE" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            <product-card product-img-url="../assets/index/product-bottles/ICE POP.webp" product-title="ICE POP" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            <product-card product-img-url="../assets/index/product-bottles/TROPICAL PUNCH.webp" product-title="TROPICAL PUNCH" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-        </div>
-    </div>
 
-    <!-- title-bottles-tablet  -->
-    <section class="hidden tab:flex tab:justify-center des:hidden mt-[100px]">
-        <div class="container">
-            <h3 class="text-[28px] text-center text-stroke-2 font-normalidadWide">YOU MAY ALSO LIKE</h3>
-            <div class="grid grid-cols-3 gap-[10px] mt-[20px]">
-                <product-card product-img-url="../assets/index/product-bottles/STRAWBERRY WATERMELON.webp" product-title="STRAWBERRY WATERMELON" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/LEMONADE.webp" product-title="LEMONADE" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/ICE POP.webp" product-title="ICE POP" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            </div>
-            <div class="w-full flex justify-center">
-                <div class="grid grid-cols-1 max-[1280px]:w-[334px] max-[1024px]:w-[259px]">
-                    <product-card product-img-url="../assets/index/product-bottles/TROPICAL PUNCH.webp" product-title="TROPICAL PUNCH" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- title-bottles-desktop  -->
-    <section class="flex justify-center mt-[100px]">
-        <div class="hidden des:block container">
-            <h3 class="text-[28px] text-center text-stroke-2 font-normalidadWide">YOU MAY ALSO LIKE</h3>
-            <div class="grid grid-cols-4 gap-[10px] mt-[20px]">
-                <product-card product-img-url="../assets/index/product-bottles/STRAWBERRY WATERMELON.webp" product-title="STRAWBERRY WATERMELON" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/LEMONADE.webp" product-title="LEMONADE" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/ICE POP.webp" product-title="ICE POP" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/TROPICAL PUNCH.webp" product-title="TROPICAL PUNCH" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            </div>
-        </div>
+    <section class="pt-20 pb-20">
+        <subpage-drink-product-generator data-json="../data/subpageDrinkProduct.json"></subpage-drink-product-generator>
     </section>
 
     <!-- footer -->

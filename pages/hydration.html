@@ -9,6 +9,9 @@
     <script src="../component/footer.js"></script>
     <link rel="stylesheet" href="../src/style/tailwindcss.css">
     <link rel="stylesheet" href="../src/style/navbar.css">
+    <script src="../component/drinkCardGenerator.js" defer></script>
+    <script src="../component/energyCard.js" defer></script>
+
 </head>
 <body class="mt-[50px] tab:mt-[119px] des:mt-[72px]">
     
@@ -34,80 +37,14 @@
         </div>
     </section>
 
-    <!-- product-card-diplay-798px-down -->
-    <section class="tab:hidden flex justify-center">
-        <div class="w-full grid grid-cols-1 gap-[30px]">
-            <div class="grid grid-cols-2">
-                <a href="./hydration-subpage.html">
-                    <product-card product-img-url="../assets/index/product-bottles/strawberry banana.webp" product-title="STRAWBERRY BANANA" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                </a>
-                <product-card product-img-url="../assets/index/product-bottles/CHERRY FREEZE.webp" product-title="CHERRY FREEZE" product-size="12PK" product-price="$29.99" button-bg-color="bg-white" button-title="FIND IN STORE"></product-card>
-            </div>
-
-            <div class="grid grid-cols-2">
-                <product-card product-img-url="../assets/index/product-bottles/LEMONADE.webp" product-title="LEMONADE" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/STRAWBERRY WATERMELON.webp" product-title="STRAWBERRY WATERMELON" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            </div>
-
-            <div class="grid grid-cols-2">
-                <product-card product-img-url="../assets/index/product-bottles/META MOON.webp" product-title="META MOON" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/ICE POP.webp" product-title="ICE POP" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            </div>
-
-            <div class="grid grid-cols-2">
-                <product-card product-img-url="../assets/index/product-bottles/BLUE RASPBERRY.webp" product-title="BLUE RASPBERRY" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/TROPICAL PUNCH.webp" product-title="TROPICAL PUNCH" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            </div>
-
-            <div class="grid grid-cols-2">
-                <product-card product-img-url="../assets/index/product-bottles/LEMON LIME.webp" product-title="LEMON LIME" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/GRAPE.webp" product-title="GRAPE" product-size="12PK" product-price="$29.99" button-bg-color="bg-white" button-title="LEARN MORE"></product-card>
-            </div>
-
-            <div class="w-full flex justify-center">
-                <div class="grid grid-cols-1 w-[50%]">
-                    <product-card product-img-url="../assets/index/product-bottles/ORANGE.webp" product-title="ORANGE" product-size="12PK" product-price="$29.99" button-bg-color="bg-white" button-title="LEARN MORE"></product-card>  
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- product-card-display-798px-up  -->
-    <section class="hidden tab:flex justify-center">
-        <div class="max-w-[960px] grid grid-cols-1 gap-[40px]">
-            <div class="w-full grid grid-cols-3">
-                <a href="./hydration-subpage.html">
-                    <product-card product-img-url="../assets/index/product-bottles/strawberry banana.webp" product-title="STRAWBERRY BANANA" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                </a>
-                <product-card product-img-url="../assets/index/product-bottles/CHERRY FREEZE.webp" product-title="CHERRY FREEZE" product-size="12PK" product-price="$29.99" button-bg-color="bg-white" button-title="FIND IN STORE"></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/LEMONADE.webp" product-title="LEMONADE" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            </div>
-
-            <div class="w-full grid grid-cols-3">
-                <product-card product-img-url="../assets/index/product-bottles/STRAWBERRY WATERMELON.webp" product-title="STRAWBERRY WATERMELON" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/META MOON.webp" product-title="META MOON" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/ICE POP.webp" product-title="ICE POP" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            </div>
-
-            <div class="w-full grid grid-cols-3">
-                <product-card product-img-url="../assets/index/product-bottles/BLUE RASPBERRY.webp" product-title="BLUE RASPBERRY" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/TROPICAL PUNCH.webp" product-title="TROPICAL PUNCH" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-                <product-card product-img-url="../assets/index/product-bottles/LEMON LIME.webp" product-title="LEMON LIME" product-size="12PK" product-price="$29.99" button-bg-color="bg-black" button-title=""></product-card>
-            </div>
-
-            <div class="w-full flex justify-center">
-                <div class="w-[700px] grid grid-cols-2">
-                    <product-card product-img-url="../assets/index/product-bottles/GRAPE.webp" product-title="GRAPE" product-size="12PK" product-price="$29.99" button-bg-color="bg-white" button-title="LEARN MORE"></product-card>
-                    <product-card product-img-url="../assets/index/product-bottles/ORANGE.webp" product-title="ORANGE" product-size="12PK" product-price="$29.99" button-bg-color="bg-white" button-title="LEARN MORE"></product-card>  
-                </div>
-            </div>            
-        </div>
-    </section>
+    <!-- Fetch-data-json -->
+    <drink-product-generator data-json="../data/hydrationDrink.json"></drink-product-generator>
 
     <!-- footer  -->
     <div class="mt-[115px]">
         <prime-footer></prime-footer>
     </div>
 
+    
 </body>
 </html>

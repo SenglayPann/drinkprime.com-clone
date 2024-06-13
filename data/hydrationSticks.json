@@ -1,0 +1,77 @@
+
+{
+    "energyDrink":[
+        {
+          "productImgUrl": "../assets/index/product-sticks/strawberry-banana.webp",
+          "productTitle": "STRAWBERRY BANANA",
+          "productSize": "6PK",
+          "productPrice": "$13.99",
+          "buttonBgColor": "bg-white",
+          "buttonTitle": "FIND IN STORE"
+        },
+        {
+          "productImgUrl": "../assets/index/product-sticks/cherry-freeze.webp",
+          "productTitle": "CHERRY FREEZE",
+          "productSize": "6PK",
+          "productPrice": "$13.99",
+          "buttonBgColor": "bg-black",
+          "buttonTitle": ""
+        },
+        {
+          "productImgUrl": "../assets/index/product-sticks/strawberry-watermelon.webp",
+          "productTitle": "STRAWBERRY WATERMELON",
+          "productSize": "6PK",
+          "productPrice": "$13.99",
+          "buttonBgColor": "bg-black",
+          "buttonTitle": ""
+        },
+        {
+          "productImgUrl": "../assets/index/product-sticks/lemonade.webp",
+          "productTitle": "LEMONADE",
+          "productSize": "6PK",
+          "productPrice": "$13.99",
+          "buttonBgColor": "bg-black",
+          "buttonTitle": ""
+        },
+        {
+          "productImgUrl": "../assets/index/product-sticks/ice-pop.webp",
+          "productTitle": "ICE POP",
+          "productSize": "6PK",
+          "productPrice": "$13.99",
+          "buttonBgColor": "bg-black",
+          "buttonTitle": ""
+        },
+        {
+          "productImgUrl": "../assets/index/product-sticks/blue-raspberry.webp",
+          "productTitle": "BLUE RASPBERRY",
+          "productSize": "6PK",
+          "productPrice": "$13.99",
+          "buttonBgColor": "bg-black",
+          "buttonTitle": ""
+        },
+        {
+          "productImgUrl": "../assets/index/product-sticks/tropical-punch.webp",
+          "productTitle": "TROPICAL PUNCH",
+          "productSize": "6PK",
+          "productPrice": "$13.99",
+          "buttonBgColor": "bg-black",
+          "buttonTitle": ""
+        },
+        {
+          "productImgUrl": "../assets/index/product-sticks/lemon-lime.webp",
+          "productTitle": "LEMON LIME",
+          "productSize": "6PK",
+          "productPrice": "$13.99",
+          "buttonBgColor": "bg-black",
+          "buttonTitle": ""
+        },
+        {
+          "productImgUrl": "../assets/index/product-sticks/meta-moon.webp",
+          "productTitle": "META MOON",
+          "productSize": "6PK",
+          "productPrice": "$13.99",
+          "buttonBgColor": "bg-white",
+          "buttonTitle": "FIND IN STORE"
+        }
+    ]            
+}
