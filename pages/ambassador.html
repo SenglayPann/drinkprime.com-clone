@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ambassadors</title>
     <link rel="stylesheet" href="/src/style/tailwindcss.css">
-    <script src="../component/navbar.js" defer></script>
-    <script src="/src/script/index.js" defer></script>
-    <script src="/component/footer.js"></script>
     <link rel="stylesheet" href="../src/style/navbar.css">
+    <script src="../component/navbar.js" defer></script>
+    <script src="/component/footer.js" defer></script>
+    <script src="../component/heroComponent.js" defer></script>
 
 </head>
 <body >
@@ -17,7 +17,14 @@
     <nav-bar bgMustWhite="true" textMustBlack="true" iconMustBlack="true" ></nav-bar>
 
     <!-- hero -->
-    <div class="relative text-center tab:text-left">
+    <hero-banner
+        smaller-img="/assets/ambassador/Hero-mobile.webp"
+        larger-img="/assets/ambassador/Hero-Desktop.webp"
+        sub-heading-title="PRIME COLLEGIATE AMBASSADORS"
+        heading-title="IT'S PRIME TIME"
+        button-title="APPLY NOW">
+    </hero-banner>
+    <!-- <div class="relative text-center tab:text-left">
         <img src="/assets/ambassador/Hero-Desktop.webp" alt="" class="max-[798px]:hidden">
         <img src="/assets/ambassador/Hero-mobile.webp" alt="" class="tab:hidden">
         <div class=" absolute w-full max-[798px]:top-[60%] bottom-[0%] uppercase p-[30px] text-pure-white ">
@@ -30,7 +37,7 @@
                 </button>
             </div>
         </div>
-    </div>
+    </div> -->
     
     <!-- icon image -->
     <div class="flex flex-col justify-center items-center font-normalidadExteded tracking-wider text-[14px] text-stroke-1 font-semibold leading-tight pb-[40px]">
