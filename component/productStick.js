@@ -7,11 +7,11 @@ class productCard extends HTMLElement {
         const brand = this.getAttribute("cardBrand");
         const pack = this.getAttribute("cardPack");
         const prize = this.getAttribute("cardPrize");
-        const li1 = this.getAttribute("list1");
-        const li2 = this.getAttribute("list2");
-        const li3 = this.getAttribute("list3");
-        const li4 = this.getAttribute("list4");
-        const li5 = this.getAttribute("list5");
+
+        const list = ["Zero added sugar", "20 Calories","10% Coconut Water",  "BCAAs + B Vitamins", "Antioxidants + Electrolytes",  "Caffeine-Free"];
+        let listArr = "";
+        for (let i in list ) listArr += `<li>${list[i]}</li>`;
+
         const image1 = this.getAttribute("imagefront");
         const image2 = this.getAttribute("imageside");
         const image3 = this.getAttribute("imageback");
@@ -23,9 +23,9 @@ class productCard extends HTMLElement {
         <section class="w-full flex justify-center">
             <div class="container flex flex-col items-center w-[1200px] tab:flex-row tab:items-start">
             <div class="w-[354px] scroll-image hidden tab:flex tab:flex-col tab:w-[576px]">
-                <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-sticks/SBSticksFront_2000x.webp" alt="front">
-                <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-sticks/SBSticksSide_600x.webp" alt="side">
-                <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="../assets/index/product-sticks/SBSticksBack_600x.webp" alt="back">
+                <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="${image1}" alt="front">
+                <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="${image2}" alt="side">
+                <img class="w-[354px] h-[354px] tab:w-[576px] tab:h-[576px]" src="${image3}" alt="back">
             </div>
 
             <div class="flex items-center justify-center tab:hidden">
@@ -73,11 +73,7 @@ class productCard extends HTMLElement {
                     <hr class="w-[354px] tab:w-[400px]">
                     <div class="w-[400px] flex justify-center tab:justify-start">
                         <ul class="w-[200px] pl-7 list-disc flex flex-col gap-2 text-sm font-normalidad text-stroke-1">
-                            <li>${li1}</li>
-                            <li>${li2}</li>
-                            <li>${li3}</li>
-                            <li>${li4}</li>
-                            <li>${li5}</li>
+                            ${listArr}
                         </ul>
                     </div>
                 </div>

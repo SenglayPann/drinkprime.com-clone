@@ -652,6 +652,10 @@ video {
   bottom: 0%;
 }
 
+.bottom-\[5\%\] {
+  bottom: 5%;
+}
+
 .bottom-\[60px\] {
   bottom: 60px;
 }
@@ -698,10 +702,6 @@ video {
 
 .top-\[50px\] {
   top: 50px;
-}
-
-.top-\[70\%\] {
-  top: 70%;
 }
 
 .top-\[80\%\] {
@@ -2903,10 +2903,6 @@ body {
   .tab2\:w-\[calc\(33\.33\%_-_24px\)\] {
     width: calc(33.33% - 24px);
   }
-
-  .tab2\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 @media (min-width: 960px) {
@@ -3006,10 +3002,6 @@ body {
 
   .tab3\:max-w-\[1320px\] {
     max-width: 1320px;
-  }
-
-  .tab3\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .tab3\:flex-nowrap {

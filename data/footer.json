@@ -1,0 +1,58 @@
+{
+    "aboutPrime": {
+      "title": "ABOUT PRIME",
+      "description": "PRIME was developed to fill the void where great taste meets function. With bold, thirst-quenching flavors to help you refresh, replenish, and refuel, PRIME is the perfect boost for any endeavor. We're confident you'll love it as much as we do.",
+      "socialLinks": [
+        {
+          "url": "https://www.facebook.com/Prime-Hydration-101364282422983",
+          "icon": "<svg width='14px' height='14px' viewBox='0 0 14 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>...</svg>"
+        },
+        {
+          "url": "https://www.instagram.com/drinkprime/",
+          "icon": "<svg width='14px' height='14px' viewBox='0 0 14 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>...</svg>"
+        },
+        {
+          "url": "https://twitter.com/primehydrate",
+          "icon": "<svg width='14px' height='14px' role='presentation' viewBox='0 0 32 26'>...</svg>"
+        }
+      ]
+    },
+    "links": [
+      {
+        "category": "Products",
+        "items": [
+          { "text": "ENERGY", "url": "/energy.html" },
+          { "text": "HYDRATION", "url": "/hydration.html" },
+          { "text": "HYDRATION+ STICKS", "url": "/hydration-sticks.html" }
+        ]
+      },
+      {
+        "category": "Company",
+        "items": [
+          { "text": "ABOUT PRIME", "url": "/about-prime.html" },
+          { "text": "TEAM + ATHLETES", "url": "/athlete.html" },
+          { "text": "CREATORS", "url": "/creator.html" },
+          { "text": "ARTISTS", "url": "/artist.html" },
+          { "text": "AMBASSADORS", "url": "/ambassador.html" },
+          { "text": "FAQ", "url": "#" }
+        ]
+      },
+      {
+        "category": "Support",
+        "items": [
+          { "text": "TERM OF USE", "url": "./index.html" },
+          { "text": "PRIVACY POLICY", "url": "#" },
+          { "text": "RETURN POLICY", "url": "#" },
+          { "text": "WHERE TO BUY", "url": "/where-to-buy.html" },
+          { "text": "CONTACT US", "url": "#" }
+        ]
+      }
+    ],
+    "newsletter": {
+      "title": "NEWSLETTER",
+      "description": "Subscribe to receive updates, access to exclusive deals, and more.",
+      "disclaimer": "By subscribing, you consent to receive marketing communications from PRIME using the provided email address and phone number. Consent to receive marketing is not required for purchase. Standard data and messaging rates may apply. You can opt-out at any time by contacting us or using the unsubscribe link. See our Privacy Policy for details."
+    },
+    "copyright": "© Prime Hydration LLC"
+  }
+  
