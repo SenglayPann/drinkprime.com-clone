@@ -1,0 +1,61 @@
+{
+    "energyDrink":[
+        {
+          "productImgUrl": "../assets/index/energy/ORIGINAL.webp",
+          "productTitle": "ORIGINAL",
+          "productSize": "12PK",
+          "productPrice": "$29.99",
+          "buttonBgColor": "bg-white",
+          "buttonTitle": "FIND IN STORE"
+        },
+        {
+          "productImgUrl": "../assets/index/energy/ICE POP.webp",
+          "productTitle": "ICE POP",
+          "productSize": "12PK",
+          "productPrice": "$29.99",
+          "buttonBgColor": "bg-white",
+          "buttonTitle": "FIND IN STORE"
+        },
+        {
+          "productImgUrl": "../assets/index/energy/STRAWBERRY WATERMELON.webp",
+          "productTitle": "STRAWBERRY WATERMELON",
+          "productSize": "12PK",
+          "productPrice": "$29.99",
+          "buttonBgColor": "bg-white",
+          "buttonTitle": "FIND IN STORE"
+        },
+        {
+          "productImgUrl": "../assets/index/energy/BLUE RASPBERRY.webp",
+          "productTitle": "BLUE RASPBERRY",
+          "productSize": "12PK",
+          "productPrice": "$29.99",
+          "buttonBgColor": "bg-white",
+          "buttonTitle": "FIND IN STORE"
+        },
+        {
+          "productImgUrl": "../assets/index/energy/TROPICAL PUNCH .webp",
+          "productTitle": "TROPICAL PUNCH",
+          "productSize": "12PK",
+          "productPrice": "$29.99",
+          "buttonBgColor": "bg-white",
+          "buttonTitle": "FIND IN STORE"
+        },
+        {
+          "productImgUrl": "../assets/index/energy/ORANGE MANGO.webp",
+          "productTitle": "ORANGE MANGO",
+          "productSize": "12PK",
+          "productPrice": "$29.99",
+          "buttonBgColor": "bg-white",
+          "buttonTitle": "FIND IN STORE"
+        },
+        {
+          "productImgUrl": "../assets/index/energy/lemon Lime.webp",
+          "productTitle": "ORANGE MANGO",
+          "productSize": "12PK",
+          "productPrice": "$29.99",
+          "buttonBgColor": "bg-white",
+          "buttonTitle": "FIND IN STORE"
+        }
+    ]
+      
+}

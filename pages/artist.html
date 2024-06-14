@@ -6,9 +6,11 @@
     <title>Artist</title>
     <link rel="stylesheet" href="../src/style/tailwindcss.css">
     <link rel="stylesheet" href="../src/style/navbar.css">
-    <script src="../component/navbar.js"></script>
-    <script src="../component/componentCreatorCards.js"></script>
-    <script src="../component/footer.js"></script>
+    <script src="../component/navbar.js" defer></script>
+    <script src="../component/componentCreatorCards.js" defer></script>
+    <script src="../component/footer.js" defer></script>
+    <script src="../component/heroComponent.js" defer></script>
+
 </head>
 <body>
     
@@ -16,50 +18,19 @@
     <nav-bar bgMustWhite="true" textMustBlack="true" iconMustBlack="true" ></nav-bar>
 
     <!-- Section: Artist section hero -->
-    <section id="creatorComponent">
-        <div class="image-container relative mx-auto w-full">
-            <div class="relative">
-                <img src="../assets/artist/artist 360.webp" alt="" class="w-full h-auto hidden" id="firstImage">
-                <img src="../assets/artist/artist.webp" alt="" class="hidden tab:w-full tab:h-auto" id="secondImage">
-                
-                <!-- Text Overlay for First Image -->
-                <div class="text-overlay absolute inset-10 flex-col items-center justify-center text-center text-white max-w-[calc(100%-20px)] top-[80%] hidden " id="firstTextOverlay">
-                    <p class="text-base font-normalidadWide tracking-[4.33px]">EXCEPTIONAL ENTERTAINMENT</p>
-                    <p class="text-3xl font-black font-normalidad pt-[10px] mb-[27px] tracking-[2.33px] text-stroke-1">MEET PRIME ARTISTS</p>
-                </div>
-    
-                <!-- Text Overlay for Second Image -->
-                <div class="text-overlay hidden tab:flex absolute inset-10 p-[30px] flex-col items-start justify-start text-left text-white md:top-[60%] tab:top-[65%] tab1: des:top-[80%]" id="secondTextOverlay">
-                    <p class="text-base font-normalidadWide tracking-[5px]">EXCEPTIONAL ENTERTAINMENT</p>
-                    <p class="text-4xl font-black font-normalidad pt-[10px] mb-[27px] tracking-[2.33px] text-stroke-1">MEET PRIME ARTISTS</p>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Creator Images Grid -->
-        <div class="grid grid-cols-1 tab1:grid-cols-3" id="creatorGrid" logoList='[
-            { 
-                "imgSrc": "../assets/artist/central cee.webp",
-                "name": "CENTRAL CEE",
-                "location": "ARTIST"
-            },
-            { 
-                "imgSrc": "../assets/artist/yellow-guy.webp",
-                "name": "SFERA EBBASTA",
-                "location": "ARTIST"
-            },
-            { 
-                "imgSrc": "../assets/artist/pluma.webp",
-                "name": "PESO PLUMA",
-                "location": "ARTIST"
-            }
-        ]'></div>
-        </section>
-    
-        <!-- Footer: Creator footer -->
-        <div>
-            <prime-footer></prime-footer>
-        </div>
+    <hero-banner
+        smaller-img="../assets/artist/artist 360.webp"
+        larger-img="../assets/artist/artist.webp"
+        heading-title="EXCEPTIONAL ENTERTAINMENT"
+        sub-heading-title="MEET PRIME ARTISTS"
+        button-not-display="hidden">
+    </hero-banner>
+    <!-- Creator Images Grid -->
+    <div class="grid grid-cols-1 tab1:grid-cols-3" id="creatorGrid" json-data="../data/artist.json"></div>
+
+    <!-- Footer: Creator footer -->
+    <prime-footer></prime-footer>
+
 
 
 </body>
